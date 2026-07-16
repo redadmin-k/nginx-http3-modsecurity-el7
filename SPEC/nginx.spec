@@ -79,7 +79,7 @@ Requires(pre): shadow-utils
 
 # end of distribution specific definitions
 
-%define base_version 1.30.3
+%define base_version 1.30.4
 %define base_release 1%{?dist}
 
 %define bdir %{_builddir}/%{name}-%{base_version}
