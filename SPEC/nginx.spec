@@ -108,7 +108,7 @@ Source7: nginx-debug.service
 Source8: nginx.copyright
 Source9: nginx.check-reload.sh
 Source10: https://github.com/tokers/zstd-nginx-module/archive/refs/tags/0.1.1.tar.gz
-Source11: https://github.com/openssl/openssl/releases/download/openssl-3.5.6/openssl-3.5.7.tar.gz
+Source11: https://github.com/openssl/openssl/releases/download/openssl-3.5.8/openssl-3.5.8.tar.gz
 Source12: https://github.com/owasp-modsecurity/ModSecurity-nginx/archive/refs/tags/v1.0.4.tar.gz
 
 License: 2-clause BSD-like license
@@ -171,7 +171,7 @@ test -f /opt/modsecurity/lib64/libmodsecurity.so
     --with-cc-opt="%{WITH_CC_OPT}" \
     --with-ld-opt="%{WITH_LD_OPT}" \
     --with-debug \
-    --with-openssl=openssl-3.5.7 \
+    --with-openssl=openssl-3.5.8 \
     --with-openssl-opt=enable-ktls
 
 make %{?_smp_mflags}
@@ -180,7 +180,7 @@ make %{?_smp_mflags}
 ./configure %{BASE_CONFIGURE_ARGS} \
     --with-cc-opt="%{WITH_CC_OPT}" \
     --with-ld-opt="%{WITH_LD_OPT}" \
-    --with-openssl=openssl-3.5.7 \
+    --with-openssl=openssl-3.5.8 \
     --with-openssl-opt=enable-ktls
 make %{?_smp_mflags}
 
