@@ -1,22 +1,22 @@
-2026-09-22 13:21:43,685 - Mock Version: 6.8
-2026-09-22 13:21:43,688 - Start(bootstrap): chroot init
-2026-09-22 13:21:43,696 - Start(bootstrap): cleaning package manager metadata
-2026-09-22 13:21:43,699 - Finish(bootstrap): cleaning package manager metadata
-2026-09-22 13:21:45,814 - Finish(bootstrap): chroot init
-2026-09-22 13:21:45,815 - Start: chroot init
-2026-09-22 13:21:45,821 - Start: cleaning package manager metadata
-2026-09-22 13:21:45,848 - Finish: cleaning package manager metadata
-2026-09-22 13:21:46,370 - Start: installing minimal buildroot with yum
-2026-09-22 13:32:15,806 - Finish: installing minimal buildroot with yum
-2026-09-22 13:32:18,944 - Start: creating root cache
-2026-09-22 13:35:09,131 - Finish: creating root cache
-2026-09-22 13:35:09,210 - Finish: chroot init
-2026-09-22 13:35:09,633 - Start: build phase for nginx-1.30.5-1.el8.src.rpm
-2026-09-22 13:35:09,634 - Start: build setup for nginx-1.30.5-1.el8.src.rpm
-2026-09-22 13:38:58,190 - Finish: build setup for nginx-1.30.5-1.el8.src.rpm
-2026-09-22 13:38:58,192 - Start: rpmbuild nginx-1.30.5-1.el8.src.rpm
-2026-09-22 13:38:58,196 - Start: Outputting list of installed packages
-2026-09-22 13:38:58,548 - Finish: Outputting list of installed packages
-2026-09-22 14:53:42,672 - Finish: rpmbuild nginx-1.30.5-1.el8.src.rpm
-2026-09-22 14:53:43,116 - Finish: build phase for nginx-1.30.5-1.el8.src.rpm
-2026-09-22 14:53:43,122 - Finish: run
+2026-09-30 15:29:03,716 - Mock Version: 6.8
+2026-09-30 15:29:03,720 - Start(bootstrap): chroot init
+2026-09-30 15:29:03,761 - Start(bootstrap): cleaning package manager metadata
+2026-09-30 15:29:03,762 - Finish(bootstrap): cleaning package manager metadata
+2026-09-30 15:29:05,955 - Finish(bootstrap): chroot init
+2026-09-30 15:29:05,955 - Start: chroot init
+2026-09-30 15:29:05,960 - Start: unpacking root cache
+2026-09-30 15:29:09,397 - Finish: unpacking root cache
+2026-09-30 15:29:09,399 - Start: cleaning package manager metadata
+2026-09-30 15:29:09,400 - Finish: cleaning package manager metadata
+2026-09-30 15:29:20,937 - Start: yum update
+2026-09-30 15:29:34,016 - Finish: yum update
+2026-09-30 15:37:43,898 - Finish: chroot init
+2026-09-30 15:37:43,899 - Start: build phase for nginx-1.30.5-1.el8.src.rpm
+2026-09-30 15:37:43,899 - Start: build setup for nginx-1.30.5-1.el8.src.rpm
+2026-09-30 15:41:38,015 - Finish: build setup for nginx-1.30.5-1.el8.src.rpm
+2026-09-30 15:41:38,015 - Start: rpmbuild nginx-1.30.5-1.el8.src.rpm
+2026-09-30 15:41:38,018 - Start: Outputting list of installed packages
+2026-09-30 15:41:38,353 - Finish: Outputting list of installed packages
+2026-09-30 15:56:01,544 - Finish: rpmbuild nginx-1.30.5-1.el8.src.rpm
+2026-09-30 15:56:01,879 - Finish: build phase for nginx-1.30.5-1.el8.src.rpm
+2026-09-30 15:56:01,882 - Finish: run

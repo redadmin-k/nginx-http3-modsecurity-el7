@@ -7,7 +7,7 @@ This build includes HTTP/3, OpenSSL 3.5.8, KTLS, zstd compression, and ModSecuri
 ## Features
 
 - Nginx 1.30.5
-- OpenSSL 3.5.8
+- OpenSSL 3.5.9
 - HTTP/3 / QUIC
 - KTLS
 - zstd compression via zstd-nginx-module
@@ -96,8 +96,8 @@ sudo systemctl restart nginx
 - OS: EL7 x86_64
 - Build Tool: mock
 - Mock Config: centos+epel-7-x86_64
-- Nginx Version: 1.30.3
-- OpenSSL Version: 3.5.7
+- Nginx Version: 1.30.5
+- OpenSSL Version: 3.5.9
 - ModSecurity Version: 3.0.16
 
 Additional modules:
