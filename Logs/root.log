@@ -1,4 +1,4 @@
-INFO buildroot.py:704:  Mock Version: 6.8
+INFO buildroot.py:704:  Mock Version: 6.9
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64/root
 DEBUG file_util.py:20:  created dir: /var/lib/mock/centos+epel-7-x86_64/root
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64-bootstrap
@@ -31,7 +31,7 @@ DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x8
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64-bootstrap/root/dev/shm
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64-bootstrap/root/dev/mapper
 DEBUG file_util.py:20:  created dir: /var/lib/mock/centos+epel-7-x86_64-bootstrap/root/dev/mapper
-DEBUG buildroot.py:904:  kernel version == 4.18.0-553.169.1.el8_10.x86_64
+DEBUG buildroot.py:904:  kernel version == 4.18.0-553.172.1.el8_10.x86_64
 DEBUG file_util.py:29:  touching file: /var/lib/mock/centos+epel-7-x86_64-bootstrap/root/etc/fstab
 DEBUG file_util.py:29:  touching file: /var/lib/mock/centos+epel-7-x86_64-bootstrap/root/etc/yum/yum.conf
 DEBUG file_util.py:29:  touching file: /var/lib/mock/centos+epel-7-x86_64-bootstrap/root/etc/dnf/dnf.conf
@@ -141,14 +141,14 @@ DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:636:  Executing command: ['/bin/free', '--human'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:537:                total        used        free      shared  buff/cache   available
-DEBUG util.py:537:  Mem:          3.6Gi       732Mi       687Mi        19Mi       2.2Gi       2.6Gi
-DEBUG util.py:537:  Swap:         4.0Gi        83Mi       3.9Gi
+DEBUG util.py:537:  Mem:          3.6Gi       605Mi       116Mi        42Mi       2.9Gi       2.7Gi
+DEBUG util.py:537:  Swap:         4.0Gi        24Mi       3.9Gi
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:636:  Executing command: ['/bin/df', '-H', '-T', '/var/lib/mock/centos+epel-7-x86_64/root', '/var/cache/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:537:  Filesystem     Type  Size  Used Avail Use% Mounted on
-DEBUG util.py:537:  /dev/vda3      xfs    49G   20G   29G  42% /
-DEBUG util.py:537:  /dev/vda3      xfs    49G   20G   29G  42% /
+DEBUG util.py:537:  /dev/vda3      xfs    49G   22G   27G  45% /
+DEBUG util.py:537:  /dev/vda3      xfs    49G   22G   27G  45% /
 DEBUG util.py:688:  Child return code was: 0
 DEBUG buildroot.py:760:  create skeleton dirs
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64/root/var/lib/rpm
@@ -173,7 +173,7 @@ DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x8
 DEBUG file_util.py:20:  created dir: /var/lib/mock/centos+epel-7-x86_64/root/dev/shm
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64/root/dev/mapper
 DEBUG file_util.py:20:  created dir: /var/lib/mock/centos+epel-7-x86_64/root/dev/mapper
-DEBUG buildroot.py:904:  kernel version == 4.18.0-553.169.1.el8_10.x86_64
+DEBUG buildroot.py:904:  kernel version == 4.18.0-553.172.1.el8_10.x86_64
 DEBUG file_util.py:29:  touching file: /var/lib/mock/centos+epel-7-x86_64/root/etc/fstab
 DEBUG file_util.py:29:  touching file: /var/lib/mock/centos+epel-7-x86_64/root/etc/yum/yum.conf
 DEBUG file_util.py:29:  touching file: /var/lib/mock/centos+epel-7-x86_64/root/etc/dnf/dnf.conf
@@ -213,7 +213,7 @@ DEBUG util.py:688:  Child return code was: 0
 DEBUG file_util.py:29:  touching file: /var/lib/mock/centos+epel-7-x86_64/root/etc/resolv.conf
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args None
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd239817816164b65a11dd81217a5f9e8', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/sh', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=LANG=C.UTF-8', 'rpm', '-q', 'rpm', 'rpm-sequoia', 'python3-dnf', 'python3-dnf-plugins-core', 'yum', 'yum-utils', 'dnf5', 'dnf5-plugins'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '223285e87d584d4683e5e61e1e97bae0', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/sh', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=LANG=C.UTF-8', 'rpm', '-q', 'rpm', 'rpm-sequoia', 'python3-dnf', 'python3-dnf-plugins-core', 'yum', 'yum-utils', 'dnf5', 'dnf5-plugins'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  rpm-4.11.3-45.el7.x86_64
 DEBUG util.py:537:  package rpm-sequoia is not installed
 DEBUG util.py:537:  package python3-dnf is not installed
@@ -244,7 +244,7 @@ DEBUG buildroot.py:728:  nuke_rpm_db: removing /var/lib/mock/centos+epel-7-x86_6
 DEBUG buildroot.py:728:  nuke_rpm_db: removing /var/lib/mock/centos+epel-7-x86_64-bootstrap/root/var/lib/rpm/__db.003
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '65a88b72ef0e4ce0858e13cf879980a4', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '2b7442b83a9544898bd3939bd5508f8f', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  gpg-pubkey-352c64e5-52ae6884
 DEBUG util.py:537:  centos-release-7-9.2009.2.el7.centos.x86_64
 DEBUG util.py:537:  filesystem-3.2-25.el7.x86_64
@@ -465,7 +465,7 @@ DEBUG util.py:717:  child environment: None
 DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/centos+epel-7-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
-DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.as01j8_v', '/var/lib/mock/centos+epel-7-x86_64/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.ecdrzbpq', '/var/lib/mock/centos+epel-7-x86_64/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:688:  Child return code was: 0
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64/root/sys/fs/selinux
 DEBUG util.py:717:  child environment: None
@@ -486,15 +486,16 @@ DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x8
 DEBUG package_manager.py:296:  ['/usr/bin/yum', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '-y', '--releasever', '7', 'update']
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '36136c9468484f368f858468eeb0ef4d', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=LC_MESSAGES=C.UTF-8', '/usr/bin/yum', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '-y', '--releasever', '7', 'update', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'eb895585d0854a52a199f61d1bc19c1a', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=LC_MESSAGES=C.UTF-8', '/usr/bin/yum', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '-y', '--releasever', '7', 'update', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:535:  Failed to set locale, defaulting to C
-DEBUG util.py:537:  base                                                     | 3.6 kB     00:00     
-DEBUG util.py:537:  centos-sclo-rh                                           | 3.0 kB     00:00     
-DEBUG util.py:537:  centos-sclo-sclo                                         | 3.0 kB     00:00     
-DEBUG util.py:537:  epel                                                     | 4.3 kB     00:00     
-DEBUG util.py:537:  extras                                                   | 2.9 kB     00:00     
-DEBUG util.py:537:  mock-localrepo                                           | 3.0 kB     00:00     
-DEBUG util.py:537:  updates                                                  | 2.9 kB     00:00     
+DEBUG util.py:537:  base                                                                                                                                                                  | 3.6 kB  00:00:00     
+DEBUG util.py:537:  centos-sclo-rh                                                                                                                                                        | 3.0 kB  00:00:00     
+DEBUG util.py:537:  centos-sclo-sclo                                                                                                                                                      | 3.0 kB  00:00:00     
+DEBUG util.py:537:  epel                                                                                                                                                                  | 4.3 kB  00:00:00     
+DEBUG util.py:537:  extras                                                                                                                                                                | 2.9 kB  00:00:00     
+DEBUG util.py:537:  mock-localrepo                                                                                                                                                        | 3.0 kB  00:00:00     
+DEBUG util.py:537:  updates                                                                                                                                                               | 2.9 kB  00:00:00     
+DEBUG util.py:537:  mock-localrepo/primary_db                                                                                                                                             | 3.2 kB  00:00:00     
 DEBUG util.py:537:  No packages marked for update
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:200:  kill orphans in chroot /var/lib/mock/centos+epel-7-x86_64/root
@@ -542,7 +543,7 @@ DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'remount,priva
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '4664fcd9d75d4426ae7e50a47f531fe9', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '55a56ff8ef104ddcb6b6f192471186ce', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  gpg-pubkey-352c64e5-52ae6884
 DEBUG util.py:537:  centos-release-7-9.2009.2.el7.centos.x86_64
 DEBUG util.py:537:  filesystem-3.2-25.el7.x86_64
@@ -772,9 +773,9 @@ DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/root
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0615de717a1b4511b88c9add45bae7fa', '-D', '/var/lib/mock/centos+epel-7-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/nginx-1.30.5-1.el8.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '492dd9b0911945aa8013e69a6788d45a', '-D', '/var/lib/mock/centos+epel-7-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/nginx-1.30.6-1.el8.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  Updating / installing...
-DEBUG util.py:537:  nginx-1:1.30.5-1.el8                  ########################################
+DEBUG util.py:537:  nginx-1:1.30.6-1.el8                  ########################################
 DEBUG util.py:688:  Child return code was: 0
 DEBUG buildroot.py:723:  removing 3 rpm db files
 DEBUG buildroot.py:728:  nuke_rpm_db: removing /var/lib/mock/centos+epel-7-x86_64/root/var/lib/rpm/__db.001
@@ -782,10 +783,10 @@ DEBUG buildroot.py:728:  nuke_rpm_db: removing /var/lib/mock/centos+epel-7-x86_6
 DEBUG buildroot.py:728:  nuke_rpm_db: removing /var/lib/mock/centos+epel-7-x86_64/root/var/lib/rpm/__db.003
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '5e4a0511359048fab499c2946fec90bb', '-D', '/var/lib/mock/centos+epel-7-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qpl', '/builddir/build/originals/nginx-1.30.5-1.el8.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b825a17b97fc4a19bca8077e734d2f12', '-D', '/var/lib/mock/centos+epel-7-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qpl', '/builddir/build/originals/nginx-1.30.6-1.el8.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  0.1.1.tar.gz
 DEBUG util.py:537:  logrotate
-DEBUG util.py:537:  nginx-1.30.5.tar.gz
+DEBUG util.py:537:  nginx-1.30.6.tar.gz
 DEBUG util.py:537:  nginx-debug.service
 DEBUG util.py:537:  nginx.check-reload.sh
 DEBUG util.py:537:  nginx.conf
@@ -815,7 +816,7 @@ DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'remount,priva
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '959739072008416e9bfbb4768ec802ce', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'bcb59c811a1949ca806af3d8e9a0ca92', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  gpg-pubkey-352c64e5-52ae6884
 DEBUG util.py:537:  centos-release-7-9.2009.2.el7.centos.x86_64
 DEBUG util.py:537:  filesystem-3.2-25.el7.x86_64
@@ -1007,7 +1008,7 @@ DEBUG util.py:636:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/moc
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '305d1090c29d4c0cb7cd65ac0dd593b9', '-D', '/var/lib/mock/centos+epel-7-x86_64/root', '-a', '--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/sh', '-c', 'rpmbuild --help'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a873822035254b329fff4d83d87a76d3', '-D', '/var/lib/mock/centos+epel-7-x86_64/root', '-a', '--capability=cap_ipc_lock', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/sh', '-c', 'rpmbuild --help'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  Usage: rpmbuild [OPTION...]
 DEBUG util.py:537:  Build options with [ <specfile> | <tarball> | <source package> ]:
 DEBUG util.py:537:    -bp                           build through %prep (unpack sources and apply
@@ -1104,7 +1105,7 @@ DEBUG util.py:717:  child environment: None
 DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/centos+epel-7-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
-DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.as01j8_v', '/var/lib/mock/centos+epel-7-x86_64/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.ecdrzbpq', '/var/lib/mock/centos+epel-7-x86_64/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:688:  Child return code was: 0
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64/root/sys/fs/selinux
 DEBUG util.py:717:  child environment: None
@@ -1122,19 +1123,19 @@ DEBUG util.py:717:  child environment: None
 DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:688:  Child return code was: 0
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64/root/installation-homedir
-DEBUG package_manager.py:296:  ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '--releasever', '7', '/var/lib/mock/centos+epel-7-x86_64/root//builddir/build/SRPMS/nginx-1.30.5-1.el7.redadmin.src.rpm']
+DEBUG package_manager.py:296:  ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '--releasever', '7', '/var/lib/mock/centos+epel-7-x86_64/root//builddir/build/SRPMS/nginx-1.30.6-1.el7.redadmin.src.rpm']
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd55080eaca734807a19cb8cc012afa0f', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=LC_MESSAGES=C.UTF-8', '/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '--releasever', '7', '/var/lib/mock/centos+epel-7-x86_64/root//builddir/build/SRPMS/nginx-1.30.5-1.el7.redadmin.src.rpm', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '474e90d7b9de41b3bd84051dfa6f52eb', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=LC_MESSAGES=C.UTF-8', '/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '--releasever', '7', '/var/lib/mock/centos+epel-7-x86_64/root//builddir/build/SRPMS/nginx-1.30.6-1.el7.redadmin.src.rpm', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:535:  Failed to set locale, defaulting to C
-DEBUG util.py:537:  base                                                     | 3.6 kB     00:00     
-DEBUG util.py:537:  centos-sclo-rh                                           | 3.0 kB     00:00     
-DEBUG util.py:537:  centos-sclo-sclo                                         | 3.0 kB     00:00     
-DEBUG util.py:537:  epel                                                     | 4.3 kB     00:00     
-DEBUG util.py:537:  extras                                                   | 2.9 kB     00:00     
-DEBUG util.py:537:  mock-localrepo                                           | 3.0 kB     00:00     
-DEBUG util.py:537:  updates                                                  | 2.9 kB     00:00     
-DEBUG util.py:537:  Getting requirements for 1:nginx-1.30.5-1.el7.redadmin.src
+DEBUG util.py:537:  base                                                                                                                                                                  | 3.6 kB  00:00:00     
+DEBUG util.py:537:  centos-sclo-rh                                                                                                                                                        | 3.0 kB  00:00:00     
+DEBUG util.py:537:  centos-sclo-sclo                                                                                                                                                      | 3.0 kB  00:00:00     
+DEBUG util.py:537:  epel                                                                                                                                                                  | 4.3 kB  00:00:00     
+DEBUG util.py:537:  extras                                                                                                                                                                | 2.9 kB  00:00:00     
+DEBUG util.py:537:  mock-localrepo                                                                                                                                                        | 3.0 kB  00:00:00     
+DEBUG util.py:537:  updates                                                                                                                                                               | 2.9 kB  00:00:00     
+DEBUG util.py:537:  Getting requirements for 1:nginx-1.30.6-1.el7.redadmin.src
 DEBUG util.py:537:   --> Already installed : systemd-219-78.el7_9.9.x86_64
 DEBUG util.py:537:   --> 1:openssl-devel-1.0.2k-26.el7_9.x86_64
 DEBUG util.py:537:   --> zlib-devel-1.2.7-21.el7_9.x86_64
@@ -1145,17 +1146,17 @@ DEBUG util.py:537:   --> Already installed : 1:pkgconfig-0.27.1-4.el7.x86_64
 DEBUG util.py:537:   --> perl-core-5.16.3-299.el7_9.x86_64
 DEBUG util.py:537:   --> 1:perl-IPC-Cmd-0.80-4.el7.noarch
 DEBUG util.py:537:   --> perl-Time-Piece-1.20.1-299.el7_9.x86_64
-DEBUG util.py:537:   --> modsecurity-3.0.16-1.el7.x86_64
+DEBUG util.py:537:   --> modsecurity-3.0.17-1.el7.x86_64
 DEBUG util.py:537:  --> Running transaction check
 DEBUG util.py:537:  ---> Package libzstd-devel.x86_64 0:1.5.5-1.el7 will be installed
 DEBUG util.py:537:  --> Processing Dependency: libzstd(x86-64) = 1.5.5-1.el7 for package: libzstd-devel-1.5.5-1.el7.x86_64
 DEBUG util.py:537:  --> Processing Dependency: libzstd.so.1()(64bit) for package: libzstd-devel-1.5.5-1.el7.x86_64
-DEBUG util.py:537:  ---> Package modsecurity.x86_64 0:3.0.16-1.el7 will be installed
-DEBUG util.py:537:  --> Processing Dependency: lmdb-libs for package: modsecurity-3.0.16-1.el7.x86_64
-DEBUG util.py:537:  --> Processing Dependency: pcre2 for package: modsecurity-3.0.16-1.el7.x86_64
-DEBUG util.py:537:  --> Processing Dependency: yajl for package: modsecurity-3.0.16-1.el7.x86_64
-DEBUG util.py:537:  --> Processing Dependency: libpcre2-8.so.0()(64bit) for package: modsecurity-3.0.16-1.el7.x86_64
-DEBUG util.py:537:  --> Processing Dependency: libyajl.so.2()(64bit) for package: modsecurity-3.0.16-1.el7.x86_64
+DEBUG util.py:537:  ---> Package modsecurity.x86_64 0:3.0.17-1.el7 will be installed
+DEBUG util.py:537:  --> Processing Dependency: lmdb-libs for package: modsecurity-3.0.17-1.el7.x86_64
+DEBUG util.py:537:  --> Processing Dependency: pcre2 for package: modsecurity-3.0.17-1.el7.x86_64
+DEBUG util.py:537:  --> Processing Dependency: yajl for package: modsecurity-3.0.17-1.el7.x86_64
+DEBUG util.py:537:  --> Processing Dependency: libpcre2-8.so.0()(64bit) for package: modsecurity-3.0.17-1.el7.x86_64
+DEBUG util.py:537:  --> Processing Dependency: libyajl.so.2()(64bit) for package: modsecurity-3.0.17-1.el7.x86_64
 DEBUG util.py:537:  ---> Package openssl-devel.x86_64 1:1.0.2k-26.el7_9 will be installed
 DEBUG util.py:537:  --> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.2k-26.el7_9.x86_64
 DEBUG util.py:537:  ---> Package pcre2-devel.x86_64 0:10.23-2.el7 will be installed
@@ -1341,396 +1342,334 @@ DEBUG util.py:537:  --> Running transaction check
 DEBUG util.py:537:  ---> Package perl-Net-Daemon.noarch 0:0.48-5.el7 will be installed
 DEBUG util.py:537:  --> Finished Dependency Resolution
 DEBUG util.py:537:  Dependencies Resolved
-DEBUG util.py:537:  ================================================================================
-DEBUG util.py:537:   Package                      Arch   Version               Repository      Size
-DEBUG util.py:537:  ================================================================================
+DEBUG util.py:537:  =============================================================================================================================================================================================
+DEBUG util.py:537:   Package                                                 Arch                              Version                                           Repository                                 Size
+DEBUG util.py:537:  =============================================================================================================================================================================================
 DEBUG util.py:537:  Installing:
-DEBUG util.py:537:   libzstd-devel                x86_64 1.5.5-1.el7           epel            53 k
-DEBUG util.py:537:   modsecurity                  x86_64 3.0.16-1.el7          mock-localrepo 981 k
-DEBUG util.py:537:   openssl-devel                x86_64 1:1.0.2k-26.el7_9     updates        1.5 M
-DEBUG util.py:537:   pcre2-devel                  x86_64 10.23-2.el7           base           545 k
-DEBUG util.py:537:   perl-IPC-Cmd                 noarch 1:0.80-4.el7          base            34 k
-DEBUG util.py:537:   perl-Time-Piece              x86_64 1.20.1-299.el7_9      updates         70 k
-DEBUG util.py:537:   perl-core                    x86_64 5.16.3-299.el7_9      updates         43 k
-DEBUG util.py:537:   zlib-devel                   x86_64 1.2.7-21.el7_9        updates         50 k
+DEBUG util.py:537:   libzstd-devel                                           x86_64                            1.5.5-1.el7                                       epel                                       53 k
+DEBUG util.py:537:   modsecurity                                             x86_64                            3.0.17-1.el7                                      mock-localrepo                            988 k
+DEBUG util.py:537:   openssl-devel                                           x86_64                            1:1.0.2k-26.el7_9                                 updates                                   1.5 M
+DEBUG util.py:537:   pcre2-devel                                             x86_64                            10.23-2.el7                                       base                                      545 k
+DEBUG util.py:537:   perl-IPC-Cmd                                            noarch                            1:0.80-4.el7                                      base                                       34 k
+DEBUG util.py:537:   perl-Time-Piece                                         x86_64                            1.20.1-299.el7_9                                  updates                                    70 k
+DEBUG util.py:537:   perl-core                                               x86_64                            5.16.3-299.el7_9                                  updates                                    43 k
+DEBUG util.py:537:   zlib-devel                                              x86_64                            1.2.7-21.el7_9                                    updates                                    50 k
 DEBUG util.py:537:  Installing for dependencies:
-DEBUG util.py:537:   gdbm-devel                   x86_64 1.10-8.el7            base            47 k
-DEBUG util.py:537:   keyutils-libs-devel          x86_64 1.5.8-3.el7           base            37 k
-DEBUG util.py:537:   krb5-devel                   x86_64 1.15.1-55.el7_9       updates        273 k
-DEBUG util.py:537:   libcom_err-devel             x86_64 1.42.9-19.el7         base            32 k
-DEBUG util.py:537:   libdb-devel                  x86_64 5.3.21-25.el7         base            39 k
-DEBUG util.py:537:   libkadm5                     x86_64 1.15.1-55.el7_9       updates        180 k
-DEBUG util.py:537:   libselinux-devel             x86_64 2.5-15.el7            base           187 k
-DEBUG util.py:537:   libsepol-devel               x86_64 2.5-10.el7            base            77 k
-DEBUG util.py:537:   libverto-devel               x86_64 0.2.5-4.el7           base            12 k
-DEBUG util.py:537:   libzstd                      x86_64 1.5.5-1.el7           epel           292 k
-DEBUG util.py:537:   lmdb-libs                    x86_64 0.9.22-2.el7          epel            54 k
-DEBUG util.py:537:   pcre-devel                   x86_64 8.32-17.el7           base           480 k
-DEBUG util.py:537:   pcre2                        x86_64 10.23-2.el7           base           201 k
-DEBUG util.py:537:   pcre2-utf16                  x86_64 10.23-2.el7           base           189 k
-DEBUG util.py:537:   pcre2-utf32                  x86_64 10.23-2.el7           base           181 k
-DEBUG util.py:537:   perl-Archive-Extract         noarch 1:0.68-3.el7          base            28 k
-DEBUG util.py:537:   perl-Archive-Tar             noarch 1.92-3.el7            base            73 k
-DEBUG util.py:537:   perl-B-Lint                  noarch 1.17-3.el7            base            20 k
-DEBUG util.py:537:   perl-CGI                     noarch 3.63-4.el7            base           250 k
-DEBUG util.py:537:   perl-CPAN                    noarch 1.9800-299.el7_9      updates        293 k
-DEBUG util.py:537:   perl-CPAN-Meta               noarch 2.120921-5.el7        base           113 k
-DEBUG util.py:537:   perl-CPAN-Meta-Requirements  noarch 2.122-7.el7           base            24 k
-DEBUG util.py:537:   perl-CPAN-Meta-YAML          noarch 0.008-14.el7          base            24 k
-DEBUG util.py:537:   perl-CPANPLUS                noarch 0.91.38-4.el7         base           307 k
-DEBUG util.py:537:   perl-CPANPLUS-Dist-Build     noarch 0.70-3.el7            base            28 k
-DEBUG util.py:537:   perl-Compress-Raw-Bzip2      x86_64 2.061-3.el7           base            32 k
-DEBUG util.py:537:   perl-Compress-Raw-Zlib       x86_64 1:2.061-4.el7         base            57 k
-DEBUG util.py:537:   perl-DBD-SQLite              x86_64 1.39-3.el7            base           1.3 M
-DEBUG util.py:537:   perl-DBI                     x86_64 1.627-4.el7           base           802 k
-DEBUG util.py:537:   perl-DBIx-Simple             noarch 1.35-7.el7            base            43 k
-DEBUG util.py:537:   perl-DB_File                 x86_64 1.830-6.el7           base            74 k
-DEBUG util.py:537:   perl-Data-Dumper             x86_64 2.145-3.el7           base            47 k
-DEBUG util.py:537:   perl-Digest                  noarch 1.17-245.el7          base            23 k
-DEBUG util.py:537:   perl-Digest-MD5              x86_64 2.52-3.el7            base            30 k
-DEBUG util.py:537:   perl-Digest-SHA              x86_64 1:5.85-4.el7          base            58 k
-DEBUG util.py:537:   perl-Env                     noarch 1.04-2.el7            base            16 k
-DEBUG util.py:537:   perl-ExtUtils-CBuilder       noarch 1:0.28.2.6-299.el7_9  updates         68 k
-DEBUG util.py:537:   perl-ExtUtils-Embed          noarch 1.30-299.el7_9        updates         51 k
-DEBUG util.py:537:   perl-ExtUtils-Install        noarch 1.58-299.el7_9        updates         75 k
-DEBUG util.py:537:   perl-ExtUtils-MakeMaker      noarch 6.68-3.el7            base           275 k
-DEBUG util.py:537:   perl-ExtUtils-Manifest       noarch 1.61-244.el7          base            31 k
-DEBUG util.py:537:   perl-ExtUtils-ParseXS        noarch 1:3.18-3.el7          base            77 k
-DEBUG util.py:537:   perl-FCGI                    x86_64 1:0.74-8.el7          base            42 k
-DEBUG util.py:537:   perl-File-CheckTree          noarch 4.42-3.el7            base            18 k
-DEBUG util.py:537:   perl-File-Fetch              noarch 0.42-2.el7            base            27 k
-DEBUG util.py:537:   perl-IO-Compress             noarch 2.061-2.el7           base           260 k
-DEBUG util.py:537:   perl-IO-Zlib                 noarch 1:1.10-299.el7_9      updates         52 k
-DEBUG util.py:537:   perl-JSON-PP                 noarch 2.27202-2.el7         base            55 k
-DEBUG util.py:537:   perl-Locale-Codes            noarch 3.26-2.el7            base           314 k
-DEBUG util.py:537:   perl-Locale-Maketext         noarch 1.23-3.el7            base            93 k
-DEBUG util.py:537:   perl-Locale-Maketext-Simple  noarch 1:0.21-299.el7_9      updates         51 k
-DEBUG util.py:537:   perl-Log-Message             noarch 1:0.08-3.el7          base            29 k
-DEBUG util.py:537:   perl-Log-Message-Simple      noarch 0.10-2.el7            base            11 k
-DEBUG util.py:537:   perl-Module-Build            noarch 2:0.40.05-2.el7       base           281 k
-DEBUG util.py:537:   perl-Module-CoreList         noarch 1:2.76.02-299.el7_9   updates         86 k
-DEBUG util.py:537:   perl-Module-Load             noarch 1:0.24-3.el7          base            11 k
-DEBUG util.py:537:   perl-Module-Load-Conditional noarch 0.54-3.el7            base            18 k
-DEBUG util.py:537:   perl-Module-Loaded           noarch 1:0.08-299.el7_9      updates         47 k
-DEBUG util.py:537:   perl-Module-Metadata         noarch 1.000018-2.el7        base            26 k
-DEBUG util.py:537:   perl-Module-Pluggable        noarch 1:4.8-3.el7           base            29 k
-DEBUG util.py:537:   perl-Net-Daemon              noarch 0.48-5.el7            base            51 k
-DEBUG util.py:537:   perl-Object-Accessor         noarch 1:0.42-299.el7_9      updates         56 k
-DEBUG util.py:537:   perl-Package-Constants       noarch 1:0.02-299.el7_9      updates         46 k
-DEBUG util.py:537:   perl-Params-Check            noarch 1:0.38-2.el7          base            18 k
-DEBUG util.py:537:   perl-Parse-CPAN-Meta         noarch 1:1.4404-5.el7        base            14 k
-DEBUG util.py:537:   perl-Perl-OSType             noarch 1.003-3.el7           base            20 k
-DEBUG util.py:537:   perl-PlRPC                   noarch 0.2020-14.el7         base            36 k
-DEBUG util.py:537:   perl-Pod-Checker             noarch 1.60-2.el7            base            28 k
-DEBUG util.py:537:   perl-Pod-LaTeX               noarch 0.61-2.el7            base            35 k
-DEBUG util.py:537:   perl-Pod-Parser              noarch 1.61-2.el7            base           107 k
-DEBUG util.py:537:   perl-Sys-Syslog              x86_64 0.33-3.el7            base            42 k
-DEBUG util.py:537:   perl-Term-UI                 noarch 0.36-2.el7            base            22 k
-DEBUG util.py:537:   perl-Test-Harness            noarch 3.28-3.el7            base           302 k
-DEBUG util.py:537:   perl-Test-Simple             noarch 0.98-243.el7          base           170 k
-DEBUG util.py:537:   perl-Text-Soundex            x86_64 3.04-4.el7            base            19 k
-DEBUG util.py:537:   perl-Text-Unidecode          noarch 0.04-20.el7           base           114 k
-DEBUG util.py:537:   perl-Version-Requirements    noarch 0.101022-244.el7      base            21 k
-DEBUG util.py:537:   perl-autodie                 noarch 2.16-2.el7            base            77 k
-DEBUG util.py:537:   perl-devel                   x86_64 4:5.16.3-299.el7_9    updates        454 k
-DEBUG util.py:537:   perl-local-lib               noarch 1.008010-4.el7        base            64 k
-DEBUG util.py:537:   perl-version                 x86_64 3:0.99.07-6.el7       base            84 k
-DEBUG util.py:537:   pyparsing                    noarch 1.5.6-9.el7           base            94 k
-DEBUG util.py:537:   python                       x86_64 2.7.5-94.el7_9        updates         97 k
-DEBUG util.py:537:   systemtap-sdt-devel          x86_64 4.0-13.el7            base            76 k
-DEBUG util.py:537:   yajl                         x86_64 2.0.4-4.el7           base            39 k
+DEBUG util.py:537:   gdbm-devel                                              x86_64                            1.10-8.el7                                        base                                       47 k
+DEBUG util.py:537:   keyutils-libs-devel                                     x86_64                            1.5.8-3.el7                                       base                                       37 k
+DEBUG util.py:537:   krb5-devel                                              x86_64                            1.15.1-55.el7_9                                   updates                                   273 k
+DEBUG util.py:537:   libcom_err-devel                                        x86_64                            1.42.9-19.el7                                     base                                       32 k
+DEBUG util.py:537:   libdb-devel                                             x86_64                            5.3.21-25.el7                                     base                                       39 k
+DEBUG util.py:537:   libkadm5                                                x86_64                            1.15.1-55.el7_9                                   updates                                   180 k
+DEBUG util.py:537:   libselinux-devel                                        x86_64                            2.5-15.el7                                        base                                      187 k
+DEBUG util.py:537:   libsepol-devel                                          x86_64                            2.5-10.el7                                        base                                       77 k
+DEBUG util.py:537:   libverto-devel                                          x86_64                            0.2.5-4.el7                                       base                                       12 k
+DEBUG util.py:537:   libzstd                                                 x86_64                            1.5.5-1.el7                                       epel                                      292 k
+DEBUG util.py:537:   lmdb-libs                                               x86_64                            0.9.22-2.el7                                      epel                                       54 k
+DEBUG util.py:537:   pcre-devel                                              x86_64                            8.32-17.el7                                       base                                      480 k
+DEBUG util.py:537:   pcre2                                                   x86_64                            10.23-2.el7                                       base                                      201 k
+DEBUG util.py:537:   pcre2-utf16                                             x86_64                            10.23-2.el7                                       base                                      189 k
+DEBUG util.py:537:   pcre2-utf32                                             x86_64                            10.23-2.el7                                       base                                      181 k
+DEBUG util.py:537:   perl-Archive-Extract                                    noarch                            1:0.68-3.el7                                      base                                       28 k
+DEBUG util.py:537:   perl-Archive-Tar                                        noarch                            1.92-3.el7                                        base                                       73 k
+DEBUG util.py:537:   perl-B-Lint                                             noarch                            1.17-3.el7                                        base                                       20 k
+DEBUG util.py:537:   perl-CGI                                                noarch                            3.63-4.el7                                        base                                      250 k
+DEBUG util.py:537:   perl-CPAN                                               noarch                            1.9800-299.el7_9                                  updates                                   293 k
+DEBUG util.py:537:   perl-CPAN-Meta                                          noarch                            2.120921-5.el7                                    base                                      113 k
+DEBUG util.py:537:   perl-CPAN-Meta-Requirements                             noarch                            2.122-7.el7                                       base                                       24 k
+DEBUG util.py:537:   perl-CPAN-Meta-YAML                                     noarch                            0.008-14.el7                                      base                                       24 k
+DEBUG util.py:537:   perl-CPANPLUS                                           noarch                            0.91.38-4.el7                                     base                                      307 k
+DEBUG util.py:537:   perl-CPANPLUS-Dist-Build                                noarch                            0.70-3.el7                                        base                                       28 k
+DEBUG util.py:537:   perl-Compress-Raw-Bzip2                                 x86_64                            2.061-3.el7                                       base                                       32 k
+DEBUG util.py:537:   perl-Compress-Raw-Zlib                                  x86_64                            1:2.061-4.el7                                     base                                       57 k
+DEBUG util.py:537:   perl-DBD-SQLite                                         x86_64                            1.39-3.el7                                        base                                      1.3 M
+DEBUG util.py:537:   perl-DBI                                                x86_64                            1.627-4.el7                                       base                                      802 k
+DEBUG util.py:537:   perl-DBIx-Simple                                        noarch                            1.35-7.el7                                        base                                       43 k
+DEBUG util.py:537:   perl-DB_File                                            x86_64                            1.830-6.el7                                       base                                       74 k
+DEBUG util.py:537:   perl-Data-Dumper                                        x86_64                            2.145-3.el7                                       base                                       47 k
+DEBUG util.py:537:   perl-Digest                                             noarch                            1.17-245.el7                                      base                                       23 k
+DEBUG util.py:537:   perl-Digest-MD5                                         x86_64                            2.52-3.el7                                        base                                       30 k
+DEBUG util.py:537:   perl-Digest-SHA                                         x86_64                            1:5.85-4.el7                                      base                                       58 k
+DEBUG util.py:537:   perl-Env                                                noarch                            1.04-2.el7                                        base                                       16 k
+DEBUG util.py:537:   perl-ExtUtils-CBuilder                                  noarch                            1:0.28.2.6-299.el7_9                              updates                                    68 k
+DEBUG util.py:537:   perl-ExtUtils-Embed                                     noarch                            1.30-299.el7_9                                    updates                                    51 k
+DEBUG util.py:537:   perl-ExtUtils-Install                                   noarch                            1.58-299.el7_9                                    updates                                    75 k
+DEBUG util.py:537:   perl-ExtUtils-MakeMaker                                 noarch                            6.68-3.el7                                        base                                      275 k
+DEBUG util.py:537:   perl-ExtUtils-Manifest                                  noarch                            1.61-244.el7                                      base                                       31 k
+DEBUG util.py:537:   perl-ExtUtils-ParseXS                                   noarch                            1:3.18-3.el7                                      base                                       77 k
+DEBUG util.py:537:   perl-FCGI                                               x86_64                            1:0.74-8.el7                                      base                                       42 k
+DEBUG util.py:537:   perl-File-CheckTree                                     noarch                            4.42-3.el7                                        base                                       18 k
+DEBUG util.py:537:   perl-File-Fetch                                         noarch                            0.42-2.el7                                        base                                       27 k
+DEBUG util.py:537:   perl-IO-Compress                                        noarch                            2.061-2.el7                                       base                                      260 k
+DEBUG util.py:537:   perl-IO-Zlib                                            noarch                            1:1.10-299.el7_9                                  updates                                    52 k
+DEBUG util.py:537:   perl-JSON-PP                                            noarch                            2.27202-2.el7                                     base                                       55 k
+DEBUG util.py:537:   perl-Locale-Codes                                       noarch                            3.26-2.el7                                        base                                      314 k
+DEBUG util.py:537:   perl-Locale-Maketext                                    noarch                            1.23-3.el7                                        base                                       93 k
+DEBUG util.py:537:   perl-Locale-Maketext-Simple                             noarch                            1:0.21-299.el7_9                                  updates                                    51 k
+DEBUG util.py:537:   perl-Log-Message                                        noarch                            1:0.08-3.el7                                      base                                       29 k
+DEBUG util.py:537:   perl-Log-Message-Simple                                 noarch                            0.10-2.el7                                        base                                       11 k
+DEBUG util.py:537:   perl-Module-Build                                       noarch                            2:0.40.05-2.el7                                   base                                      281 k
+DEBUG util.py:537:   perl-Module-CoreList                                    noarch                            1:2.76.02-299.el7_9                               updates                                    86 k
+DEBUG util.py:537:   perl-Module-Load                                        noarch                            1:0.24-3.el7                                      base                                       11 k
+DEBUG util.py:537:   perl-Module-Load-Conditional                            noarch                            0.54-3.el7                                        base                                       18 k
+DEBUG util.py:537:   perl-Module-Loaded                                      noarch                            1:0.08-299.el7_9                                  updates                                    47 k
+DEBUG util.py:537:   perl-Module-Metadata                                    noarch                            1.000018-2.el7                                    base                                       26 k
+DEBUG util.py:537:   perl-Module-Pluggable                                   noarch                            1:4.8-3.el7                                       base                                       29 k
+DEBUG util.py:537:   perl-Net-Daemon                                         noarch                            0.48-5.el7                                        base                                       51 k
+DEBUG util.py:537:   perl-Object-Accessor                                    noarch                            1:0.42-299.el7_9                                  updates                                    56 k
+DEBUG util.py:537:   perl-Package-Constants                                  noarch                            1:0.02-299.el7_9                                  updates                                    46 k
+DEBUG util.py:537:   perl-Params-Check                                       noarch                            1:0.38-2.el7                                      base                                       18 k
+DEBUG util.py:537:   perl-Parse-CPAN-Meta                                    noarch                            1:1.4404-5.el7                                    base                                       14 k
+DEBUG util.py:537:   perl-Perl-OSType                                        noarch                            1.003-3.el7                                       base                                       20 k
+DEBUG util.py:537:   perl-PlRPC                                              noarch                            0.2020-14.el7                                     base                                       36 k
+DEBUG util.py:537:   perl-Pod-Checker                                        noarch                            1.60-2.el7                                        base                                       28 k
+DEBUG util.py:537:   perl-Pod-LaTeX                                          noarch                            0.61-2.el7                                        base                                       35 k
+DEBUG util.py:537:   perl-Pod-Parser                                         noarch                            1.61-2.el7                                        base                                      107 k
+DEBUG util.py:537:   perl-Sys-Syslog                                         x86_64                            0.33-3.el7                                        base                                       42 k
+DEBUG util.py:537:   perl-Term-UI                                            noarch                            0.36-2.el7                                        base                                       22 k
+DEBUG util.py:537:   perl-Test-Harness                                       noarch                            3.28-3.el7                                        base                                      302 k
+DEBUG util.py:537:   perl-Test-Simple                                        noarch                            0.98-243.el7                                      base                                      170 k
+DEBUG util.py:537:   perl-Text-Soundex                                       x86_64                            3.04-4.el7                                        base                                       19 k
+DEBUG util.py:537:   perl-Text-Unidecode                                     noarch                            0.04-20.el7                                       base                                      114 k
+DEBUG util.py:537:   perl-Version-Requirements                               noarch                            0.101022-244.el7                                  base                                       21 k
+DEBUG util.py:537:   perl-autodie                                            noarch                            2.16-2.el7                                        base                                       77 k
+DEBUG util.py:537:   perl-devel                                              x86_64                            4:5.16.3-299.el7_9                                updates                                   454 k
+DEBUG util.py:537:   perl-local-lib                                          noarch                            1.008010-4.el7                                    base                                       64 k
+DEBUG util.py:537:   perl-version                                            x86_64                            3:0.99.07-6.el7                                   base                                       84 k
+DEBUG util.py:537:   pyparsing                                               noarch                            1.5.6-9.el7                                       base                                       94 k
+DEBUG util.py:537:   python                                                  x86_64                            2.7.5-94.el7_9                                    updates                                    97 k
+DEBUG util.py:537:   systemtap-sdt-devel                                     x86_64                            4.0-13.el7                                        base                                       76 k
+DEBUG util.py:537:   yajl                                                    x86_64                            2.0.4-4.el7                                       base                                       39 k
 DEBUG util.py:537:  Transaction Summary
-DEBUG util.py:537:  ================================================================================
+DEBUG util.py:537:  =============================================================================================================================================================================================
 DEBUG util.py:537:  Install  8 Packages (+85 Dependent packages)
 DEBUG util.py:537:  Total size: 13 M
-DEBUG util.py:537:  Total download size: 981 k
+DEBUG util.py:537:  Total download size: 988 k
 DEBUG util.py:537:  Installed size: 36 M
 DEBUG util.py:537:  Downloading packages:
 DEBUG util.py:537:  Running transaction check
 DEBUG util.py:537:  Running transaction test
 DEBUG util.py:537:  Transaction test succeeded
 DEBUG util.py:537:  Running transaction
-DEBUG util.py:537:    Installing : perl-Data-Dumper-2.145-3.el7.x86_64                         1/93 
-DEBUG util.py:537:    Installing : 3:perl-version-0.99.07-6.el7.x86_64                         2/93 
-DEBUG util.py:537:    Installing : perl-Test-Harness-3.28-3.el7.noarch                         3/93 
-DEBUG util.py:537:    Installing : 1:perl-Module-Load-0.24-3.el7.noarch                        4/93 
-DEBUG util.py:537:    Installing : 1:perl-Module-CoreList-2.76.02-299.el7_9.noarch             5/93 
-DEBUG util.py:537:    Installing : perl-Module-Metadata-1.000018-2.el7.noarch                  6/93 
-DEBUG util.py:537:    Installing : 1:perl-Module-Pluggable-4.8-3.el7.noarch                    7/93 
-DEBUG util.py:537:    Installing : 1:perl-Package-Constants-0.02-299.el7_9.noarch              8/93 
-DEBUG util.py:537:    Installing : perl-Perl-OSType-1.003-3.el7.noarch                         9/93 
-DEBUG util.py:537:    Installing : perl-CPAN-Meta-YAML-0.008-14.el7.noarch                    10/93 
-DEBUG util.py:537:    Installing : perl-ExtUtils-Manifest-1.61-244.el7.noarch                 11/93 
-DEBUG util.py:537:    Installing : perl-Digest-1.17-245.el7.noarch                            12/93 
-DEBUG util.py:537:    Installing : perl-Pod-Parser-1.61-2.el7.noarch                          13/93 
-DEBUG util.py:537:    Installing : 1:perl-Digest-SHA-5.85-4.el7.x86_64                        14/93 
-DEBUG util.py:537:    Installing : perl-CPAN-Meta-Requirements-2.122-7.el7.noarch             15/93 
-DEBUG util.py:537:    Installing : perl-JSON-PP-2.27202-2.el7.noarch                          16/93 
-DEBUG util.py:537:    Installing : 1:perl-Parse-CPAN-Meta-1.4404-5.el7.noarch                 17/93 
-DEBUG util.py:537:    Installing : perl-CPAN-Meta-2.120921-5.el7.noarch                       18/93 
-DEBUG util.py:537:    Installing : 1:perl-Module-Loaded-0.08-299.el7_9.noarch                 19/93 
-DEBUG util.py:537:    Installing : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64                20/93 
-DEBUG util.py:537:    Installing : pcre2-10.23-2.el7.x86_64                                   21/93 
-DEBUG util.py:537:    Installing : python-2.7.5-94.el7_9.x86_64                               22/93 
-DEBUG util.py:537:    Installing : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64                 23/93 
-DEBUG util.py:537:    Installing : perl-IO-Compress-2.061-2.el7.noarch                        24/93 
-DEBUG util.py:537:    Installing : 1:perl-IO-Zlib-1.10-299.el7_9.noarch                       25/93 
-DEBUG util.py:537:    Installing : perl-Locale-Maketext-1.23-3.el7.noarch                     26/93 
-DEBUG util.py:537:    Installing : 1:perl-Locale-Maketext-Simple-0.21-299.el7_9.noarch        27/93 
-DEBUG util.py:537:    Installing : 1:perl-Params-Check-0.38-2.el7.noarch                      28/93 
-DEBUG util.py:537:    Installing : perl-Module-Load-Conditional-0.54-3.el7.noarch             29/93 
-DEBUG util.py:537:    Installing : 1:perl-Log-Message-0.08-3.el7.noarch                       30/93 
-DEBUG util.py:537:    Installing : 1:perl-Object-Accessor-0.42-299.el7_9.noarch               31/93 
-DEBUG util.py:537:    Installing : perl-Log-Message-Simple-0.10-2.el7.noarch                  32/93 
-DEBUG util.py:537:    Installing : perl-Term-UI-0.36-2.el7.noarch                             33/93 
-DEBUG util.py:537:    Installing : perl-Archive-Tar-1.92-3.el7.noarch                         34/93 
-DEBUG util.py:537:    Installing : pyparsing-1.5.6-9.el7.noarch                               35/93 
-DEBUG util.py:537:    Installing : systemtap-sdt-devel-4.0-13.el7.x86_64                      36/93 
-DEBUG util.py:537:    Installing : perl-Pod-Checker-1.60-2.el7.noarch                         37/93 
-DEBUG util.py:537:    Installing : perl-Pod-LaTeX-0.61-2.el7.noarch                           38/93 
-DEBUG util.py:537:    Installing : perl-Digest-MD5-2.52-3.el7.x86_64                          39/93 
-DEBUG util.py:537:    Installing : perl-B-Lint-1.17-3.el7.noarch                              40/93 
-DEBUG util.py:537:    Installing : perl-Test-Simple-0.98-243.el7.noarch                       41/93 
-DEBUG util.py:537:    Installing : perl-Version-Requirements-0.101022-244.el7.noarch          42/93 
-DEBUG util.py:537:    Installing : libkadm5-1.15.1-55.el7_9.x86_64                            43/93 
-DEBUG util.py:537:    Installing : pcre2-utf16-10.23-2.el7.x86_64                             44/93 
-DEBUG util.py:537:    Installing : zlib-devel-1.2.7-21.el7_9.x86_64                           45/93 
-DEBUG util.py:537:    Installing : perl-Net-Daemon-0.48-5.el7.noarch                          46/93 
-DEBUG util.py:537:    Installing : perl-PlRPC-0.2020-14.el7.noarch                            47/93 
-DEBUG util.py:537:    Installing : perl-DBI-1.627-4.el7.x86_64                                48/93 
-DEBUG util.py:537:    Installing : perl-DBIx-Simple-1.35-7.el7.noarch                         49/93 
-DEBUG util.py:537:    Installing : perl-DBD-SQLite-1.39-3.el7.x86_64                          50/93 
-DEBUG util.py:537:    Installing : perl-local-lib-1.008010-4.el7.noarch                       51/93 
-DEBUG util.py:537:    Installing : lmdb-libs-0.9.22-2.el7.x86_64                              52/93 
-DEBUG util.py:537:    Installing : libcom_err-devel-1.42.9-19.el7.x86_64                      53/93 
-DEBUG util.py:537:    Installing : perl-Text-Unidecode-0.04-20.el7.noarch                     54/93 
-DEBUG util.py:537:    Installing : perl-Text-Soundex-3.04-4.el7.x86_64                        55/93 
-DEBUG util.py:537:    Installing : perl-Time-Piece-1.20.1-299.el7_9.x86_64                    56/93 
-DEBUG util.py:537:    Installing : libzstd-1.5.5-1.el7.x86_64                                 57/93 
-DEBUG util.py:537:    Installing : gdbm-devel-1.10-8.el7.x86_64                               58/93 
-DEBUG util.py:537:    Installing : pcre-devel-8.32-17.el7.x86_64                              59/93 
-DEBUG util.py:537:    Installing : libdb-devel-5.3.21-25.el7.x86_64                           60/93 
-DEBUG util.py:537:    Installing : perl-ExtUtils-MakeMaker-6.68-3.el7.noarch                  61/93 
-DEBUG util.py:537:    Installing : 1:perl-ExtUtils-ParseXS-3.18-3.el7.noarch                  62/93 
-DEBUG util.py:537:    Installing : 4:perl-devel-5.16.3-299.el7_9.x86_64                       63/93 
-DEBUG util.py:537:    Installing : perl-ExtUtils-Install-1.58-299.el7_9.noarch                64/93 
-DEBUG util.py:537:    Installing : 1:perl-IPC-Cmd-0.80-4.el7.noarch                           65/93 
-DEBUG util.py:537:    Installing : 1:perl-ExtUtils-CBuilder-0.28.2.6-299.el7_9.noarch         66/93 
-DEBUG util.py:537:    Installing : 2:perl-Module-Build-0.40.05-2.el7.noarch                   67/93 
-DEBUG util.py:537:    Installing : perl-File-Fetch-0.42-2.el7.noarch                          68/93 
-DEBUG util.py:537:    Installing : 1:perl-Archive-Extract-0.68-3.el7.noarch                   69/93 
-DEBUG util.py:537:    Installing : perl-CPANPLUS-0.91.38-4.el7.noarch                         70/93 
-DEBUG util.py:537:    Installing : perl-CPANPLUS-Dist-Build-0.70-3.el7.noarch                 71/93 
-DEBUG util.py:537:    Installing : perl-ExtUtils-Embed-1.30-299.el7_9.noarch                  72/93 
-DEBUG util.py:537:    Installing : perl-CPAN-1.9800-299.el7_9.noarch                          73/93 
-DEBUG util.py:537:    Installing : pcre2-utf32-10.23-2.el7.x86_64                             74/93 
-DEBUG util.py:537:    Installing : perl-DB_File-1.830-6.el7.x86_64                            75/93 
-DEBUG util.py:537:    Installing : 1:perl-FCGI-0.74-8.el7.x86_64                              76/93 
-DEBUG util.py:537:    Installing : perl-CGI-3.63-4.el7.noarch                                 77/93 
-DEBUG util.py:537:    Installing : perl-Env-1.04-2.el7.noarch                                 78/93 
-DEBUG util.py:537:    Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                     79/93 
-DEBUG util.py:537:    Installing : perl-File-CheckTree-4.42-3.el7.noarch                      80/93 
-DEBUG util.py:537:    Installing : libsepol-devel-2.5-10.el7.x86_64                           81/93 
-DEBUG util.py:537:    Installing : libselinux-devel-2.5-15.el7.x86_64                         82/93 
-DEBUG util.py:537:    Installing : yajl-2.0.4-4.el7.x86_64                                    83/93 
-DEBUG util.py:537:    Installing : perl-autodie-2.16-2.el7.noarch                             84/93 
-DEBUG util.py:537:    Installing : perl-Sys-Syslog-0.33-3.el7.x86_64                          85/93 
-DEBUG util.py:537:    Installing : perl-Locale-Codes-3.26-2.el7.noarch                        86/93 
-DEBUG util.py:537:    Installing : libverto-devel-0.2.5-4.el7.x86_64                          87/93 
-DEBUG util.py:537:    Installing : krb5-devel-1.15.1-55.el7_9.x86_64                          88/93 
-DEBUG util.py:537:    Installing : 1:openssl-devel-1.0.2k-26.el7_9.x86_64                     89/93 
-DEBUG util.py:537:    Installing : perl-core-5.16.3-299.el7_9.x86_64                          90/93 
-DEBUG util.py:537:    Installing : modsecurity-3.0.16-1.el7.x86_64                            91/93 
-DEBUG util.py:537:    Installing : pcre2-devel-10.23-2.el7.x86_64                             92/93 
-DEBUG util.py:537:    Installing : libzstd-devel-1.5.5-1.el7.x86_64                           93/93 
-DEBUG util.py:537:    Verifying  : perl-Pod-Parser-1.61-2.el7.noarch                           1/93 
-DEBUG util.py:537:    Verifying  : perl-ExtUtils-Install-1.58-299.el7_9.noarch                 2/93 
-DEBUG util.py:537:    Verifying  : perl-Locale-Maketext-1.23-3.el7.noarch                      3/93 
-DEBUG util.py:537:    Verifying  : 1:openssl-devel-1.0.2k-26.el7_9.x86_64                      4/93 
-DEBUG util.py:537:    Verifying  : perl-Test-Simple-0.98-243.el7.noarch                        5/93 
-DEBUG util.py:537:    Verifying  : libverto-devel-0.2.5-4.el7.x86_64                           6/93 
-DEBUG util.py:537:    Verifying  : perl-Locale-Codes-3.26-2.el7.noarch                         7/93 
-DEBUG util.py:537:    Verifying  : perl-ExtUtils-Embed-1.30-299.el7_9.noarch                   8/93 
-DEBUG util.py:537:    Verifying  : perl-Sys-Syslog-0.33-3.el7.x86_64                           9/93 
-DEBUG util.py:537:    Verifying  : perl-DBI-1.627-4.el7.x86_64                                10/93 
-DEBUG util.py:537:    Verifying  : 1:perl-ExtUtils-CBuilder-0.28.2.6-299.el7_9.noarch         11/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Locale-Maketext-Simple-0.21-299.el7_9.noarch        12/93 
-DEBUG util.py:537:    Verifying  : perl-Archive-Tar-1.92-3.el7.noarch                         13/93 
-DEBUG util.py:537:    Verifying  : 3:perl-version-0.99.07-6.el7.x86_64                        14/93 
-DEBUG util.py:537:    Verifying  : perl-autodie-2.16-2.el7.noarch                             15/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Log-Message-0.08-3.el7.noarch                       16/93 
-DEBUG util.py:537:    Verifying  : yajl-2.0.4-4.el7.x86_64                                    17/93 
-DEBUG util.py:537:    Verifying  : perl-DBIx-Simple-1.35-7.el7.noarch                         18/93 
-DEBUG util.py:537:    Verifying  : libsepol-devel-2.5-10.el7.x86_64                           19/93 
-DEBUG util.py:537:    Verifying  : 1:perl-IPC-Cmd-0.80-4.el7.noarch                           20/93 
-DEBUG util.py:537:    Verifying  : perl-File-CheckTree-4.42-3.el7.noarch                      21/93 
-DEBUG util.py:537:    Verifying  : perl-CPAN-1.9800-299.el7_9.noarch                          22/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Digest-SHA-5.85-4.el7.x86_64                        23/93 
-DEBUG util.py:537:    Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                     24/93 
-DEBUG util.py:537:    Verifying  : perl-B-Lint-1.17-3.el7.noarch                              25/93 
-DEBUG util.py:537:    Verifying  : perl-Version-Requirements-0.101022-244.el7.noarch          26/93 
-DEBUG util.py:537:    Verifying  : perl-JSON-PP-2.27202-2.el7.noarch                          27/93 
-DEBUG util.py:537:    Verifying  : perl-CPAN-Meta-2.120921-5.el7.noarch                       28/93 
-DEBUG util.py:537:    Verifying  : 1:perl-ExtUtils-ParseXS-3.18-3.el7.noarch                  29/93 
-DEBUG util.py:537:    Verifying  : 2:perl-Module-Build-0.40.05-2.el7.noarch                   30/93 
-DEBUG util.py:537:    Verifying  : perl-ExtUtils-MakeMaker-6.68-3.el7.noarch                  31/93 
-DEBUG util.py:537:    Verifying  : perl-Env-1.04-2.el7.noarch                                 32/93 
-DEBUG util.py:537:    Verifying  : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64                 33/93 
-DEBUG util.py:537:    Verifying  : perl-CPAN-Meta-Requirements-2.122-7.el7.noarch             34/93 
-DEBUG util.py:537:    Verifying  : perl-Pod-Checker-1.60-2.el7.noarch                         35/93 
-DEBUG util.py:537:    Verifying  : python-2.7.5-94.el7_9.x86_64                               36/93 
-DEBUG util.py:537:    Verifying  : 1:perl-FCGI-0.74-8.el7.x86_64                              37/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Module-CoreList-2.76.02-299.el7_9.noarch            38/93 
-DEBUG util.py:537:    Verifying  : perl-DB_File-1.830-6.el7.x86_64                            39/93 
-DEBUG util.py:537:    Verifying  : perl-File-Fetch-0.42-2.el7.noarch                          40/93 
-DEBUG util.py:537:    Verifying  : pcre2-utf32-10.23-2.el7.x86_64                             41/93 
-DEBUG util.py:537:    Verifying  : perl-Digest-1.17-245.el7.noarch                            42/93 
-DEBUG util.py:537:    Verifying  : perl-Digest-MD5-2.52-3.el7.x86_64                          43/93 
-DEBUG util.py:537:    Verifying  : modsecurity-3.0.16-1.el7.x86_64                            44/93 
-DEBUG util.py:537:    Verifying  : libselinux-devel-2.5-15.el7.x86_64                         45/93 
-DEBUG util.py:537:    Verifying  : libdb-devel-5.3.21-25.el7.x86_64                           46/93 
-DEBUG util.py:537:    Verifying  : krb5-devel-1.15.1-55.el7_9.x86_64                          47/93 
-DEBUG util.py:537:    Verifying  : perl-Pod-LaTeX-0.61-2.el7.noarch                           48/93 
-DEBUG util.py:537:    Verifying  : perl-ExtUtils-Manifest-1.61-244.el7.noarch                 49/93 
-DEBUG util.py:537:    Verifying  : pcre-devel-8.32-17.el7.x86_64                              50/93 
-DEBUG util.py:537:    Verifying  : perl-DBD-SQLite-1.39-3.el7.x86_64                          51/93 
-DEBUG util.py:537:    Verifying  : gdbm-devel-1.10-8.el7.x86_64                               52/93 
-DEBUG util.py:537:    Verifying  : perl-CPAN-Meta-YAML-0.008-14.el7.noarch                    53/93 
-DEBUG util.py:537:    Verifying  : perl-Perl-OSType-1.003-3.el7.noarch                        54/93 
-DEBUG util.py:537:    Verifying  : perl-Module-Load-Conditional-0.54-3.el7.noarch             55/93 
-DEBUG util.py:537:    Verifying  : libzstd-devel-1.5.5-1.el7.x86_64                           56/93 
-DEBUG util.py:537:    Verifying  : libzstd-1.5.5-1.el7.x86_64                                 57/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Parse-CPAN-Meta-1.4404-5.el7.noarch                 58/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Package-Constants-0.02-299.el7_9.noarch             59/93 
-DEBUG util.py:537:    Verifying  : pcre2-devel-10.23-2.el7.x86_64                             60/93 
-DEBUG util.py:537:    Verifying  : perl-Time-Piece-1.20.1-299.el7_9.x86_64                    61/93 
-DEBUG util.py:537:    Verifying  : perl-Log-Message-Simple-0.10-2.el7.noarch                  62/93 
-DEBUG util.py:537:    Verifying  : perl-core-5.16.3-299.el7_9.x86_64                          63/93 
-DEBUG util.py:537:    Verifying  : perl-CGI-3.63-4.el7.noarch                                 64/93 
-DEBUG util.py:537:    Verifying  : perl-Text-Unidecode-0.04-20.el7.noarch                     65/93 
-DEBUG util.py:537:    Verifying  : perl-PlRPC-0.2020-14.el7.noarch                            66/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Module-Load-0.24-3.el7.noarch                       67/93 
-DEBUG util.py:537:    Verifying  : perl-Text-Soundex-3.04-4.el7.x86_64                        68/93 
-DEBUG util.py:537:    Verifying  : libcom_err-devel-1.42.9-19.el7.x86_64                      69/93 
-DEBUG util.py:537:    Verifying  : lmdb-libs-0.9.22-2.el7.x86_64                              70/93 
-DEBUG util.py:537:    Verifying  : perl-Module-Metadata-1.000018-2.el7.noarch                 71/93 
-DEBUG util.py:537:    Verifying  : perl-local-lib-1.008010-4.el7.noarch                       72/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Params-Check-0.38-2.el7.noarch                      73/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Module-Pluggable-4.8-3.el7.noarch                   74/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Archive-Extract-0.68-3.el7.noarch                   75/93 
-DEBUG util.py:537:    Verifying  : perl-IO-Compress-2.061-2.el7.noarch                        76/93 
-DEBUG util.py:537:    Verifying  : pyparsing-1.5.6-9.el7.noarch                               77/93 
-DEBUG util.py:537:    Verifying  : perl-Test-Harness-3.28-3.el7.noarch                        78/93 
-DEBUG util.py:537:    Verifying  : perl-Net-Daemon-0.48-5.el7.noarch                          79/93 
-DEBUG util.py:537:    Verifying  : perl-Data-Dumper-2.145-3.el7.x86_64                        80/93 
-DEBUG util.py:537:    Verifying  : systemtap-sdt-devel-4.0-13.el7.x86_64                      81/93 
-DEBUG util.py:537:    Verifying  : zlib-devel-1.2.7-21.el7_9.x86_64                           82/93 
-DEBUG util.py:537:    Verifying  : 4:perl-devel-5.16.3-299.el7_9.x86_64                       83/93 
-DEBUG util.py:537:    Verifying  : pcre2-10.23-2.el7.x86_64                                   84/93 
-DEBUG util.py:537:    Verifying  : perl-Term-UI-0.36-2.el7.noarch                             85/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64                86/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Module-Loaded-0.08-299.el7_9.noarch                 87/93 
-DEBUG util.py:537:    Verifying  : perl-CPANPLUS-Dist-Build-0.70-3.el7.noarch                 88/93 
-DEBUG util.py:537:    Verifying  : perl-CPANPLUS-0.91.38-4.el7.noarch                         89/93 
-DEBUG util.py:537:    Verifying  : 1:perl-Object-Accessor-0.42-299.el7_9.noarch               90/93 
-DEBUG util.py:537:    Verifying  : pcre2-utf16-10.23-2.el7.x86_64                             91/93 
-DEBUG util.py:537:    Verifying  : libkadm5-1.15.1-55.el7_9.x86_64                            92/93 
-DEBUG util.py:537:    Verifying  : 1:perl-IO-Zlib-1.10-299.el7_9.noarch                       93/93 
+DEBUG util.py:537:    Installing : perl-Data-Dumper-2.145-3.el7.x86_64                                                                                                                                      1/93 
+DEBUG util.py:537:    Installing : 3:perl-version-0.99.07-6.el7.x86_64                                                                                                                                      2/93 
+DEBUG util.py:537:    Installing : perl-Test-Harness-3.28-3.el7.noarch                                                                                                                                      3/93 
+DEBUG util.py:537:    Installing : 1:perl-Module-Load-0.24-3.el7.noarch                                                                                                                                     4/93 
+DEBUG util.py:537:    Installing : 1:perl-Module-CoreList-2.76.02-299.el7_9.noarch                                                                                                                          5/93 
+DEBUG util.py:537:    Installing : perl-Module-Metadata-1.000018-2.el7.noarch                                                                                                                               6/93 
+DEBUG util.py:537:    Installing : 1:perl-Module-Pluggable-4.8-3.el7.noarch                                                                                                                                 7/93 
+DEBUG util.py:537:    Installing : 1:perl-Package-Constants-0.02-299.el7_9.noarch                                                                                                                           8/93 
+DEBUG util.py:537:    Installing : perl-Perl-OSType-1.003-3.el7.noarch                                                                                                                                      9/93 
+DEBUG util.py:537:    Installing : perl-CPAN-Meta-YAML-0.008-14.el7.noarch                                                                                                                                 10/93 
+DEBUG util.py:537:    Installing : perl-ExtUtils-Manifest-1.61-244.el7.noarch                                                                                                                              11/93 
+DEBUG util.py:537:    Installing : perl-Digest-1.17-245.el7.noarch                                                                                                                                         12/93 
+DEBUG util.py:537:    Installing : perl-Pod-Parser-1.61-2.el7.noarch                                                                                                                                       13/93 
+DEBUG util.py:537:    Installing : 1:perl-Digest-SHA-5.85-4.el7.x86_64                                                                                                                                     14/93 
+DEBUG util.py:537:    Installing : perl-CPAN-Meta-Requirements-2.122-7.el7.noarch                                                                                                                          15/93 
+DEBUG util.py:537:    Installing : perl-JSON-PP-2.27202-2.el7.noarch                                                                                                                                       16/93 
+DEBUG util.py:537:    Installing : 1:perl-Parse-CPAN-Meta-1.4404-5.el7.noarch                                                                                                                              17/93 
+DEBUG util.py:537:    Installing : perl-CPAN-Meta-2.120921-5.el7.noarch                                                                                                                                    18/93 
+DEBUG util.py:537:    Installing : 1:perl-Module-Loaded-0.08-299.el7_9.noarch                                                                                                                              19/93 
+DEBUG util.py:537:    Installing : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64                                                                                                                             20/93 
+DEBUG util.py:537:    Installing : pcre2-10.23-2.el7.x86_64                                                                                                                                                21/93 
+DEBUG util.py:537:    Installing : python-2.7.5-94.el7_9.x86_64                                                                                                                                            22/93 
+DEBUG util.py:537:    Installing : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64                                                                                                                              23/93 
+DEBUG util.py:537:    Installing : perl-IO-Compress-2.061-2.el7.noarch                                                                                                                                     24/93 
+DEBUG util.py:537:    Installing : 1:perl-IO-Zlib-1.10-299.el7_9.noarch                                                                                                                                    25/93 
+DEBUG util.py:537:    Installing : perl-Locale-Maketext-1.23-3.el7.noarch                                                                                                                                  26/93 
+DEBUG util.py:537:    Installing : 1:perl-Locale-Maketext-Simple-0.21-299.el7_9.noarch                                                                                                                     27/93 
+DEBUG util.py:537:    Installing : 1:perl-Params-Check-0.38-2.el7.noarch                                                                                                                                   28/93 
+DEBUG util.py:537:    Installing : perl-Module-Load-Conditional-0.54-3.el7.noarch                                                                                                                          29/93 
+DEBUG util.py:537:    Installing : 1:perl-Log-Message-0.08-3.el7.noarch                                                                                                                                    30/93 
+DEBUG util.py:537:    Installing : 1:perl-Object-Accessor-0.42-299.el7_9.noarch                                                                                                                            31/93 
+DEBUG util.py:537:    Installing : perl-Log-Message-Simple-0.10-2.el7.noarch                                                                                                                               32/93 
+DEBUG util.py:537:    Installing : perl-Term-UI-0.36-2.el7.noarch                                                                                                                                          33/93 
+DEBUG util.py:537:    Installing : perl-Archive-Tar-1.92-3.el7.noarch                                                                                                                                      34/93 
+DEBUG util.py:537:    Installing : pyparsing-1.5.6-9.el7.noarch                                                                                                                                            35/93 
+DEBUG util.py:537:    Installing : systemtap-sdt-devel-4.0-13.el7.x86_64                                                                                                                                   36/93 
+DEBUG util.py:537:    Installing : perl-Pod-Checker-1.60-2.el7.noarch                                                                                                                                      37/93 
+DEBUG util.py:537:    Installing : perl-Pod-LaTeX-0.61-2.el7.noarch                                                                                                                                        38/93 
+DEBUG util.py:537:    Installing : perl-Digest-MD5-2.52-3.el7.x86_64                                                                                                                                       39/93 
+DEBUG util.py:537:    Installing : perl-B-Lint-1.17-3.el7.noarch                                                                                                                                           40/93 
+DEBUG util.py:537:    Installing : perl-Test-Simple-0.98-243.el7.noarch                                                                                                                                    41/93 
+DEBUG util.py:537:    Installing : perl-Version-Requirements-0.101022-244.el7.noarch                                                                                                                       42/93 
+DEBUG util.py:537:    Installing : libkadm5-1.15.1-55.el7_9.x86_64                                                                                                                                         43/93 
+DEBUG util.py:537:    Installing : pcre2-utf16-10.23-2.el7.x86_64                                                                                                                                          44/93 
+DEBUG util.py:537:    Installing : zlib-devel-1.2.7-21.el7_9.x86_64                                                                                                                                        45/93 
+DEBUG util.py:537:    Installing : perl-Net-Daemon-0.48-5.el7.noarch                                                                                                                                       46/93 
+DEBUG util.py:537:    Installing : perl-PlRPC-0.2020-14.el7.noarch                                                                                                                                         47/93 
+DEBUG util.py:537:    Installing : perl-DBI-1.627-4.el7.x86_64                                                                                                                                             48/93 
+DEBUG util.py:537:    Installing : perl-DBIx-Simple-1.35-7.el7.noarch                                                                                                                                      49/93 
+DEBUG util.py:537:    Installing : perl-DBD-SQLite-1.39-3.el7.x86_64                                                                                                                                       50/93 
+DEBUG util.py:537:    Installing : perl-local-lib-1.008010-4.el7.noarch                                                                                                                                    51/93 
+DEBUG util.py:537:    Installing : lmdb-libs-0.9.22-2.el7.x86_64                                                                                                                                           52/93 
+DEBUG util.py:537:    Installing : libcom_err-devel-1.42.9-19.el7.x86_64                                                                                                                                   53/93 
+DEBUG util.py:537:    Installing : perl-Text-Unidecode-0.04-20.el7.noarch                                                                                                                                  54/93 
+DEBUG util.py:537:    Installing : perl-Text-Soundex-3.04-4.el7.x86_64                                                                                                                                     55/93 
+DEBUG util.py:537:    Installing : perl-Time-Piece-1.20.1-299.el7_9.x86_64                                                                                                                                 56/93 
+DEBUG util.py:537:    Installing : libzstd-1.5.5-1.el7.x86_64                                                                                                                                              57/93 
+DEBUG util.py:537:    Installing : gdbm-devel-1.10-8.el7.x86_64                                                                                                                                            58/93 
+DEBUG util.py:537:    Installing : pcre-devel-8.32-17.el7.x86_64                                                                                                                                           59/93 
+DEBUG util.py:537:    Installing : libdb-devel-5.3.21-25.el7.x86_64                                                                                                                                        60/93 
+DEBUG util.py:537:    Installing : perl-ExtUtils-MakeMaker-6.68-3.el7.noarch                                                                                                                               61/93 
+DEBUG util.py:537:    Installing : 1:perl-ExtUtils-ParseXS-3.18-3.el7.noarch                                                                                                                               62/93 
+DEBUG util.py:537:    Installing : 4:perl-devel-5.16.3-299.el7_9.x86_64                                                                                                                                    63/93 
+DEBUG util.py:537:    Installing : perl-ExtUtils-Install-1.58-299.el7_9.noarch                                                                                                                             64/93 
+DEBUG util.py:537:    Installing : 1:perl-IPC-Cmd-0.80-4.el7.noarch                                                                                                                                        65/93 
+DEBUG util.py:537:    Installing : 1:perl-ExtUtils-CBuilder-0.28.2.6-299.el7_9.noarch                                                                                                                      66/93 
+DEBUG util.py:537:    Installing : 2:perl-Module-Build-0.40.05-2.el7.noarch                                                                                                                                67/93 
+DEBUG util.py:537:    Installing : perl-File-Fetch-0.42-2.el7.noarch                                                                                                                                       68/93 
+DEBUG util.py:537:    Installing : 1:perl-Archive-Extract-0.68-3.el7.noarch                                                                                                                                69/93 
+DEBUG util.py:537:    Installing : perl-CPANPLUS-0.91.38-4.el7.noarch                                                                                                                                      70/93 
+DEBUG util.py:537:    Installing : perl-CPANPLUS-Dist-Build-0.70-3.el7.noarch                                                                                                                              71/93 
+DEBUG util.py:537:    Installing : perl-ExtUtils-Embed-1.30-299.el7_9.noarch                                                                                                                               72/93 
+DEBUG util.py:537:    Installing : perl-CPAN-1.9800-299.el7_9.noarch                                                                                                                                       73/93 
+DEBUG util.py:537:    Installing : pcre2-utf32-10.23-2.el7.x86_64                                                                                                                                          74/93 
+DEBUG util.py:537:    Installing : perl-DB_File-1.830-6.el7.x86_64                                                                                                                                         75/93 
+DEBUG util.py:537:    Installing : 1:perl-FCGI-0.74-8.el7.x86_64                                                                                                                                           76/93 
+DEBUG util.py:537:    Installing : perl-CGI-3.63-4.el7.noarch                                                                                                                                              77/93 
+DEBUG util.py:537:    Installing : perl-Env-1.04-2.el7.noarch                                                                                                                                              78/93 
+DEBUG util.py:537:    Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                                                                                                                                  79/93 
+DEBUG util.py:537:    Installing : perl-File-CheckTree-4.42-3.el7.noarch                                                                                                                                   80/93 
+DEBUG util.py:537:    Installing : libsepol-devel-2.5-10.el7.x86_64                                                                                                                                        81/93 
+DEBUG util.py:537:    Installing : libselinux-devel-2.5-15.el7.x86_64                                                                                                                                      82/93 
+DEBUG util.py:537:    Installing : yajl-2.0.4-4.el7.x86_64                                                                                                                                                 83/93 
+DEBUG util.py:537:    Installing : perl-autodie-2.16-2.el7.noarch                                                                                                                                          84/93 
+DEBUG util.py:537:    Installing : perl-Sys-Syslog-0.33-3.el7.x86_64                                                                                                                                       85/93 
+DEBUG util.py:537:    Installing : perl-Locale-Codes-3.26-2.el7.noarch                                                                                                                                     86/93 
+DEBUG util.py:537:    Installing : libverto-devel-0.2.5-4.el7.x86_64                                                                                                                                       87/93 
+DEBUG util.py:537:    Installing : krb5-devel-1.15.1-55.el7_9.x86_64                                                                                                                                       88/93 
+DEBUG util.py:537:    Installing : 1:openssl-devel-1.0.2k-26.el7_9.x86_64                                                                                                                                  89/93 
+DEBUG util.py:537:    Installing : perl-core-5.16.3-299.el7_9.x86_64                                                                                                                                       90/93 
+DEBUG util.py:537:    Installing : modsecurity-3.0.17-1.el7.x86_64                                                                                                                                         91/93 
+DEBUG util.py:537:    Installing : pcre2-devel-10.23-2.el7.x86_64                                                                                                                                          92/93 
+DEBUG util.py:537:    Installing : libzstd-devel-1.5.5-1.el7.x86_64                                                                                                                                        93/93 
+DEBUG util.py:537:    Verifying  : modsecurity-3.0.17-1.el7.x86_64                                                                                                                                          1/93 
+DEBUG util.py:537:    Verifying  : perl-Pod-Parser-1.61-2.el7.noarch                                                                                                                                        2/93 
+DEBUG util.py:537:    Verifying  : perl-ExtUtils-Install-1.58-299.el7_9.noarch                                                                                                                              3/93 
+DEBUG util.py:537:    Verifying  : perl-Locale-Maketext-1.23-3.el7.noarch                                                                                                                                   4/93 
+DEBUG util.py:537:    Verifying  : 1:openssl-devel-1.0.2k-26.el7_9.x86_64                                                                                                                                   5/93 
+DEBUG util.py:537:    Verifying  : perl-Test-Simple-0.98-243.el7.noarch                                                                                                                                     6/93 
+DEBUG util.py:537:    Verifying  : libverto-devel-0.2.5-4.el7.x86_64                                                                                                                                        7/93 
+DEBUG util.py:537:    Verifying  : perl-Locale-Codes-3.26-2.el7.noarch                                                                                                                                      8/93 
+DEBUG util.py:537:    Verifying  : perl-ExtUtils-Embed-1.30-299.el7_9.noarch                                                                                                                                9/93 
+DEBUG util.py:537:    Verifying  : perl-Sys-Syslog-0.33-3.el7.x86_64                                                                                                                                       10/93 
+DEBUG util.py:537:    Verifying  : perl-DBI-1.627-4.el7.x86_64                                                                                                                                             11/93 
+DEBUG util.py:537:    Verifying  : 1:perl-ExtUtils-CBuilder-0.28.2.6-299.el7_9.noarch                                                                                                                      12/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Locale-Maketext-Simple-0.21-299.el7_9.noarch                                                                                                                     13/93 
+DEBUG util.py:537:    Verifying  : perl-Archive-Tar-1.92-3.el7.noarch                                                                                                                                      14/93 
+DEBUG util.py:537:    Verifying  : 3:perl-version-0.99.07-6.el7.x86_64                                                                                                                                     15/93 
+DEBUG util.py:537:    Verifying  : perl-autodie-2.16-2.el7.noarch                                                                                                                                          16/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Log-Message-0.08-3.el7.noarch                                                                                                                                    17/93 
+DEBUG util.py:537:    Verifying  : yajl-2.0.4-4.el7.x86_64                                                                                                                                                 18/93 
+DEBUG util.py:537:    Verifying  : perl-DBIx-Simple-1.35-7.el7.noarch                                                                                                                                      19/93 
+DEBUG util.py:537:    Verifying  : libsepol-devel-2.5-10.el7.x86_64                                                                                                                                        20/93 
+DEBUG util.py:537:    Verifying  : 1:perl-IPC-Cmd-0.80-4.el7.noarch                                                                                                                                        21/93 
+DEBUG util.py:537:    Verifying  : perl-File-CheckTree-4.42-3.el7.noarch                                                                                                                                   22/93 
+DEBUG util.py:537:    Verifying  : perl-CPAN-1.9800-299.el7_9.noarch                                                                                                                                       23/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Digest-SHA-5.85-4.el7.x86_64                                                                                                                                     24/93 
+DEBUG util.py:537:    Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                                                                                                                                  25/93 
+DEBUG util.py:537:    Verifying  : perl-B-Lint-1.17-3.el7.noarch                                                                                                                                           26/93 
+DEBUG util.py:537:    Verifying  : perl-Version-Requirements-0.101022-244.el7.noarch                                                                                                                       27/93 
+DEBUG util.py:537:    Verifying  : perl-JSON-PP-2.27202-2.el7.noarch                                                                                                                                       28/93 
+DEBUG util.py:537:    Verifying  : perl-CPAN-Meta-2.120921-5.el7.noarch                                                                                                                                    29/93 
+DEBUG util.py:537:    Verifying  : 1:perl-ExtUtils-ParseXS-3.18-3.el7.noarch                                                                                                                               30/93 
+DEBUG util.py:537:    Verifying  : 2:perl-Module-Build-0.40.05-2.el7.noarch                                                                                                                                31/93 
+DEBUG util.py:537:    Verifying  : perl-ExtUtils-MakeMaker-6.68-3.el7.noarch                                                                                                                               32/93 
+DEBUG util.py:537:    Verifying  : perl-Env-1.04-2.el7.noarch                                                                                                                                              33/93 
+DEBUG util.py:537:    Verifying  : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64                                                                                                                              34/93 
+DEBUG util.py:537:    Verifying  : perl-CPAN-Meta-Requirements-2.122-7.el7.noarch                                                                                                                          35/93 
+DEBUG util.py:537:    Verifying  : perl-Pod-Checker-1.60-2.el7.noarch                                                                                                                                      36/93 
+DEBUG util.py:537:    Verifying  : python-2.7.5-94.el7_9.x86_64                                                                                                                                            37/93 
+DEBUG util.py:537:    Verifying  : 1:perl-FCGI-0.74-8.el7.x86_64                                                                                                                                           38/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Module-CoreList-2.76.02-299.el7_9.noarch                                                                                                                         39/93 
+DEBUG util.py:537:    Verifying  : perl-DB_File-1.830-6.el7.x86_64                                                                                                                                         40/93 
+DEBUG util.py:537:    Verifying  : perl-File-Fetch-0.42-2.el7.noarch                                                                                                                                       41/93 
+DEBUG util.py:537:    Verifying  : pcre2-utf32-10.23-2.el7.x86_64                                                                                                                                          42/93 
+DEBUG util.py:537:    Verifying  : perl-Digest-1.17-245.el7.noarch                                                                                                                                         43/93 
+DEBUG util.py:537:    Verifying  : perl-Digest-MD5-2.52-3.el7.x86_64                                                                                                                                       44/93 
+DEBUG util.py:537:    Verifying  : libselinux-devel-2.5-15.el7.x86_64                                                                                                                                      45/93 
+DEBUG util.py:537:    Verifying  : libdb-devel-5.3.21-25.el7.x86_64                                                                                                                                        46/93 
+DEBUG util.py:537:    Verifying  : krb5-devel-1.15.1-55.el7_9.x86_64                                                                                                                                       47/93 
+DEBUG util.py:537:    Verifying  : perl-Pod-LaTeX-0.61-2.el7.noarch                                                                                                                                        48/93 
+DEBUG util.py:537:    Verifying  : perl-ExtUtils-Manifest-1.61-244.el7.noarch                                                                                                                              49/93 
+DEBUG util.py:537:    Verifying  : pcre-devel-8.32-17.el7.x86_64                                                                                                                                           50/93 
+DEBUG util.py:537:    Verifying  : perl-DBD-SQLite-1.39-3.el7.x86_64                                                                                                                                       51/93 
+DEBUG util.py:537:    Verifying  : gdbm-devel-1.10-8.el7.x86_64                                                                                                                                            52/93 
+DEBUG util.py:537:    Verifying  : perl-CPAN-Meta-YAML-0.008-14.el7.noarch                                                                                                                                 53/93 
+DEBUG util.py:537:    Verifying  : perl-Perl-OSType-1.003-3.el7.noarch                                                                                                                                     54/93 
+DEBUG util.py:537:    Verifying  : perl-Module-Load-Conditional-0.54-3.el7.noarch                                                                                                                          55/93 
+DEBUG util.py:537:    Verifying  : libzstd-devel-1.5.5-1.el7.x86_64                                                                                                                                        56/93 
+DEBUG util.py:537:    Verifying  : libzstd-1.5.5-1.el7.x86_64                                                                                                                                              57/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Parse-CPAN-Meta-1.4404-5.el7.noarch                                                                                                                              58/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Package-Constants-0.02-299.el7_9.noarch                                                                                                                          59/93 
+DEBUG util.py:537:    Verifying  : pcre2-devel-10.23-2.el7.x86_64                                                                                                                                          60/93 
+DEBUG util.py:537:    Verifying  : perl-Time-Piece-1.20.1-299.el7_9.x86_64                                                                                                                                 61/93 
+DEBUG util.py:537:    Verifying  : perl-Log-Message-Simple-0.10-2.el7.noarch                                                                                                                               62/93 
+DEBUG util.py:537:    Verifying  : perl-core-5.16.3-299.el7_9.x86_64                                                                                                                                       63/93 
+DEBUG util.py:537:    Verifying  : perl-CGI-3.63-4.el7.noarch                                                                                                                                              64/93 
+DEBUG util.py:537:    Verifying  : perl-Text-Unidecode-0.04-20.el7.noarch                                                                                                                                  65/93 
+DEBUG util.py:537:    Verifying  : perl-PlRPC-0.2020-14.el7.noarch                                                                                                                                         66/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Module-Load-0.24-3.el7.noarch                                                                                                                                    67/93 
+DEBUG util.py:537:    Verifying  : perl-Text-Soundex-3.04-4.el7.x86_64                                                                                                                                     68/93 
+DEBUG util.py:537:    Verifying  : libcom_err-devel-1.42.9-19.el7.x86_64                                                                                                                                   69/93 
+DEBUG util.py:537:    Verifying  : lmdb-libs-0.9.22-2.el7.x86_64                                                                                                                                           70/93 
+DEBUG util.py:537:    Verifying  : perl-Module-Metadata-1.000018-2.el7.noarch                                                                                                                              71/93 
+DEBUG util.py:537:    Verifying  : perl-local-lib-1.008010-4.el7.noarch                                                                                                                                    72/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Params-Check-0.38-2.el7.noarch                                                                                                                                   73/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Module-Pluggable-4.8-3.el7.noarch                                                                                                                                74/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Archive-Extract-0.68-3.el7.noarch                                                                                                                                75/93 
+DEBUG util.py:537:    Verifying  : perl-IO-Compress-2.061-2.el7.noarch                                                                                                                                     76/93 
+DEBUG util.py:537:    Verifying  : pyparsing-1.5.6-9.el7.noarch                                                                                                                                            77/93 
+DEBUG util.py:537:    Verifying  : perl-Test-Harness-3.28-3.el7.noarch                                                                                                                                     78/93 
+DEBUG util.py:537:    Verifying  : perl-Net-Daemon-0.48-5.el7.noarch                                                                                                                                       79/93 
+DEBUG util.py:537:    Verifying  : perl-Data-Dumper-2.145-3.el7.x86_64                                                                                                                                     80/93 
+DEBUG util.py:537:    Verifying  : systemtap-sdt-devel-4.0-13.el7.x86_64                                                                                                                                   81/93 
+DEBUG util.py:537:    Verifying  : zlib-devel-1.2.7-21.el7_9.x86_64                                                                                                                                        82/93 
+DEBUG util.py:537:    Verifying  : 4:perl-devel-5.16.3-299.el7_9.x86_64                                                                                                                                    83/93 
+DEBUG util.py:537:    Verifying  : pcre2-10.23-2.el7.x86_64                                                                                                                                                84/93 
+DEBUG util.py:537:    Verifying  : perl-Term-UI-0.36-2.el7.noarch                                                                                                                                          85/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64                                                                                                                             86/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Module-Loaded-0.08-299.el7_9.noarch                                                                                                                              87/93 
+DEBUG util.py:537:    Verifying  : perl-CPANPLUS-Dist-Build-0.70-3.el7.noarch                                                                                                                              88/93 
+DEBUG util.py:537:    Verifying  : perl-CPANPLUS-0.91.38-4.el7.noarch                                                                                                                                      89/93 
+DEBUG util.py:537:    Verifying  : 1:perl-Object-Accessor-0.42-299.el7_9.noarch                                                                                                                            90/93 
+DEBUG util.py:537:    Verifying  : pcre2-utf16-10.23-2.el7.x86_64                                                                                                                                          91/93 
+DEBUG util.py:537:    Verifying  : libkadm5-1.15.1-55.el7_9.x86_64                                                                                                                                         92/93 
+DEBUG util.py:537:    Verifying  : 1:perl-IO-Zlib-1.10-299.el7_9.noarch                                                                                                                                    93/93 
 DEBUG util.py:537:  Installed:
-DEBUG util.py:537:    libzstd-devel.x86_64 0:1.5.5-1.el7                                            
-DEBUG util.py:537:    modsecurity.x86_64 0:3.0.16-1.el7                                             
-DEBUG util.py:537:    openssl-devel.x86_64 1:1.0.2k-26.el7_9                                        
-DEBUG util.py:537:    pcre2-devel.x86_64 0:10.23-2.el7                                              
-DEBUG util.py:537:    perl-IPC-Cmd.noarch 1:0.80-4.el7                                              
-DEBUG util.py:537:    perl-Time-Piece.x86_64 0:1.20.1-299.el7_9                                     
-DEBUG util.py:537:    perl-core.x86_64 0:5.16.3-299.el7_9                                           
-DEBUG util.py:537:    zlib-devel.x86_64 0:1.2.7-21.el7_9                                            
+DEBUG util.py:537:    libzstd-devel.x86_64 0:1.5.5-1.el7         modsecurity.x86_64 0:3.0.17-1.el7    openssl-devel.x86_64 1:1.0.2k-26.el7_9  pcre2-devel.x86_64 0:10.23-2.el7  perl-IPC-Cmd.noarch 1:0.80-4.el7 
+DEBUG util.py:537:    perl-Time-Piece.x86_64 0:1.20.1-299.el7_9  perl-core.x86_64 0:5.16.3-299.el7_9  zlib-devel.x86_64 0:1.2.7-21.el7_9     
 DEBUG util.py:537:  Dependency Installed:
-DEBUG util.py:537:    gdbm-devel.x86_64 0:1.10-8.el7                                                
-DEBUG util.py:537:    keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
-DEBUG util.py:537:    krb5-devel.x86_64 0:1.15.1-55.el7_9                                           
-DEBUG util.py:537:    libcom_err-devel.x86_64 0:1.42.9-19.el7                                       
-DEBUG util.py:537:    libdb-devel.x86_64 0:5.3.21-25.el7                                            
-DEBUG util.py:537:    libkadm5.x86_64 0:1.15.1-55.el7_9                                             
-DEBUG util.py:537:    libselinux-devel.x86_64 0:2.5-15.el7                                          
-DEBUG util.py:537:    libsepol-devel.x86_64 0:2.5-10.el7                                            
-DEBUG util.py:537:    libverto-devel.x86_64 0:0.2.5-4.el7                                           
-DEBUG util.py:537:    libzstd.x86_64 0:1.5.5-1.el7                                                  
-DEBUG util.py:537:    lmdb-libs.x86_64 0:0.9.22-2.el7                                               
-DEBUG util.py:537:    pcre-devel.x86_64 0:8.32-17.el7                                               
-DEBUG util.py:537:    pcre2.x86_64 0:10.23-2.el7                                                    
-DEBUG util.py:537:    pcre2-utf16.x86_64 0:10.23-2.el7                                              
-DEBUG util.py:537:    pcre2-utf32.x86_64 0:10.23-2.el7                                              
-DEBUG util.py:537:    perl-Archive-Extract.noarch 1:0.68-3.el7                                      
-DEBUG util.py:537:    perl-Archive-Tar.noarch 0:1.92-3.el7                                          
-DEBUG util.py:537:    perl-B-Lint.noarch 0:1.17-3.el7                                               
-DEBUG util.py:537:    perl-CGI.noarch 0:3.63-4.el7                                                  
-DEBUG util.py:537:    perl-CPAN.noarch 0:1.9800-299.el7_9                                           
-DEBUG util.py:537:    perl-CPAN-Meta.noarch 0:2.120921-5.el7                                        
-DEBUG util.py:537:    perl-CPAN-Meta-Requirements.noarch 0:2.122-7.el7                              
-DEBUG util.py:537:    perl-CPAN-Meta-YAML.noarch 0:0.008-14.el7                                     
-DEBUG util.py:537:    perl-CPANPLUS.noarch 0:0.91.38-4.el7                                          
-DEBUG util.py:537:    perl-CPANPLUS-Dist-Build.noarch 0:0.70-3.el7                                  
-DEBUG util.py:537:    perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7                                  
-DEBUG util.py:537:    perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7                                   
-DEBUG util.py:537:    perl-DBD-SQLite.x86_64 0:1.39-3.el7                                           
-DEBUG util.py:537:    perl-DBI.x86_64 0:1.627-4.el7                                                 
-DEBUG util.py:537:    perl-DBIx-Simple.noarch 0:1.35-7.el7                                          
-DEBUG util.py:537:    perl-DB_File.x86_64 0:1.830-6.el7                                             
-DEBUG util.py:537:    perl-Data-Dumper.x86_64 0:2.145-3.el7                                         
-DEBUG util.py:537:    perl-Digest.noarch 0:1.17-245.el7                                             
-DEBUG util.py:537:    perl-Digest-MD5.x86_64 0:2.52-3.el7                                           
-DEBUG util.py:537:    perl-Digest-SHA.x86_64 1:5.85-4.el7                                           
-DEBUG util.py:537:    perl-Env.noarch 0:1.04-2.el7                                                  
-DEBUG util.py:537:    perl-ExtUtils-CBuilder.noarch 1:0.28.2.6-299.el7_9                            
-DEBUG util.py:537:    perl-ExtUtils-Embed.noarch 0:1.30-299.el7_9                                   
-DEBUG util.py:537:    perl-ExtUtils-Install.noarch 0:1.58-299.el7_9                                 
-DEBUG util.py:537:    perl-ExtUtils-MakeMaker.noarch 0:6.68-3.el7                                   
-DEBUG util.py:537:    perl-ExtUtils-Manifest.noarch 0:1.61-244.el7                                  
-DEBUG util.py:537:    perl-ExtUtils-ParseXS.noarch 1:3.18-3.el7                                     
-DEBUG util.py:537:    perl-FCGI.x86_64 1:0.74-8.el7                                                 
-DEBUG util.py:537:    perl-File-CheckTree.noarch 0:4.42-3.el7                                       
-DEBUG util.py:537:    perl-File-Fetch.noarch 0:0.42-2.el7                                           
-DEBUG util.py:537:    perl-IO-Compress.noarch 0:2.061-2.el7                                         
-DEBUG util.py:537:    perl-IO-Zlib.noarch 1:1.10-299.el7_9                                          
-DEBUG util.py:537:    perl-JSON-PP.noarch 0:2.27202-2.el7                                           
-DEBUG util.py:537:    perl-Locale-Codes.noarch 0:3.26-2.el7                                         
-DEBUG util.py:537:    perl-Locale-Maketext.noarch 0:1.23-3.el7                                      
-DEBUG util.py:537:    perl-Locale-Maketext-Simple.noarch 1:0.21-299.el7_9                           
-DEBUG util.py:537:    perl-Log-Message.noarch 1:0.08-3.el7                                          
-DEBUG util.py:537:    perl-Log-Message-Simple.noarch 0:0.10-2.el7                                   
-DEBUG util.py:537:    perl-Module-Build.noarch 2:0.40.05-2.el7                                      
-DEBUG util.py:537:    perl-Module-CoreList.noarch 1:2.76.02-299.el7_9                               
-DEBUG util.py:537:    perl-Module-Load.noarch 1:0.24-3.el7                                          
-DEBUG util.py:537:    perl-Module-Load-Conditional.noarch 0:0.54-3.el7                              
-DEBUG util.py:537:    perl-Module-Loaded.noarch 1:0.08-299.el7_9                                    
-DEBUG util.py:537:    perl-Module-Metadata.noarch 0:1.000018-2.el7                                  
-DEBUG util.py:537:    perl-Module-Pluggable.noarch 1:4.8-3.el7                                      
-DEBUG util.py:537:    perl-Net-Daemon.noarch 0:0.48-5.el7                                           
-DEBUG util.py:537:    perl-Object-Accessor.noarch 1:0.42-299.el7_9                                  
-DEBUG util.py:537:    perl-Package-Constants.noarch 1:0.02-299.el7_9                                
-DEBUG util.py:537:    perl-Params-Check.noarch 1:0.38-2.el7                                         
-DEBUG util.py:537:    perl-Parse-CPAN-Meta.noarch 1:1.4404-5.el7                                    
-DEBUG util.py:537:    perl-Perl-OSType.noarch 0:1.003-3.el7                                         
-DEBUG util.py:537:    perl-PlRPC.noarch 0:0.2020-14.el7                                             
-DEBUG util.py:537:    perl-Pod-Checker.noarch 0:1.60-2.el7                                          
-DEBUG util.py:537:    perl-Pod-LaTeX.noarch 0:0.61-2.el7                                            
-DEBUG util.py:537:    perl-Pod-Parser.noarch 0:1.61-2.el7                                           
-DEBUG util.py:537:    perl-Sys-Syslog.x86_64 0:0.33-3.el7                                           
-DEBUG util.py:537:    perl-Term-UI.noarch 0:0.36-2.el7                                              
-DEBUG util.py:537:    perl-Test-Harness.noarch 0:3.28-3.el7                                         
-DEBUG util.py:537:    perl-Test-Simple.noarch 0:0.98-243.el7                                        
-DEBUG util.py:537:    perl-Text-Soundex.x86_64 0:3.04-4.el7                                         
-DEBUG util.py:537:    perl-Text-Unidecode.noarch 0:0.04-20.el7                                      
-DEBUG util.py:537:    perl-Version-Requirements.noarch 0:0.101022-244.el7                           
-DEBUG util.py:537:    perl-autodie.noarch 0:2.16-2.el7                                              
-DEBUG util.py:537:    perl-devel.x86_64 4:5.16.3-299.el7_9                                          
-DEBUG util.py:537:    perl-local-lib.noarch 0:1.008010-4.el7                                        
-DEBUG util.py:537:    perl-version.x86_64 3:0.99.07-6.el7                                           
-DEBUG util.py:537:    pyparsing.noarch 0:1.5.6-9.el7                                                
-DEBUG util.py:537:    python.x86_64 0:2.7.5-94.el7_9                                                
-DEBUG util.py:537:    systemtap-sdt-devel.x86_64 0:4.0-13.el7                                       
-DEBUG util.py:537:    yajl.x86_64 0:2.0.4-4.el7                                                     
+DEBUG util.py:537:    gdbm-devel.x86_64 0:1.10-8.el7                                keyutils-libs-devel.x86_64 0:1.5.8-3.el7                       krb5-devel.x86_64 0:1.15.1-55.el7_9                           
+DEBUG util.py:537:    libcom_err-devel.x86_64 0:1.42.9-19.el7                       libdb-devel.x86_64 0:5.3.21-25.el7                             libkadm5.x86_64 0:1.15.1-55.el7_9                             
+DEBUG util.py:537:    libselinux-devel.x86_64 0:2.5-15.el7                          libsepol-devel.x86_64 0:2.5-10.el7                             libverto-devel.x86_64 0:0.2.5-4.el7                           
+DEBUG util.py:537:    libzstd.x86_64 0:1.5.5-1.el7                                  lmdb-libs.x86_64 0:0.9.22-2.el7                                pcre-devel.x86_64 0:8.32-17.el7                               
+DEBUG util.py:537:    pcre2.x86_64 0:10.23-2.el7                                    pcre2-utf16.x86_64 0:10.23-2.el7                               pcre2-utf32.x86_64 0:10.23-2.el7                              
+DEBUG util.py:537:    perl-Archive-Extract.noarch 1:0.68-3.el7                      perl-Archive-Tar.noarch 0:1.92-3.el7                           perl-B-Lint.noarch 0:1.17-3.el7                               
+DEBUG util.py:537:    perl-CGI.noarch 0:3.63-4.el7                                  perl-CPAN.noarch 0:1.9800-299.el7_9                            perl-CPAN-Meta.noarch 0:2.120921-5.el7                        
+DEBUG util.py:537:    perl-CPAN-Meta-Requirements.noarch 0:2.122-7.el7              perl-CPAN-Meta-YAML.noarch 0:0.008-14.el7                      perl-CPANPLUS.noarch 0:0.91.38-4.el7                          
+DEBUG util.py:537:    perl-CPANPLUS-Dist-Build.noarch 0:0.70-3.el7                  perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7                   perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7                   
+DEBUG util.py:537:    perl-DBD-SQLite.x86_64 0:1.39-3.el7                           perl-DBI.x86_64 0:1.627-4.el7                                  perl-DBIx-Simple.noarch 0:1.35-7.el7                          
+DEBUG util.py:537:    perl-DB_File.x86_64 0:1.830-6.el7                             perl-Data-Dumper.x86_64 0:2.145-3.el7                          perl-Digest.noarch 0:1.17-245.el7                             
+DEBUG util.py:537:    perl-Digest-MD5.x86_64 0:2.52-3.el7                           perl-Digest-SHA.x86_64 1:5.85-4.el7                            perl-Env.noarch 0:1.04-2.el7                                  
+DEBUG util.py:537:    perl-ExtUtils-CBuilder.noarch 1:0.28.2.6-299.el7_9            perl-ExtUtils-Embed.noarch 0:1.30-299.el7_9                    perl-ExtUtils-Install.noarch 0:1.58-299.el7_9                 
+DEBUG util.py:537:    perl-ExtUtils-MakeMaker.noarch 0:6.68-3.el7                   perl-ExtUtils-Manifest.noarch 0:1.61-244.el7                   perl-ExtUtils-ParseXS.noarch 1:3.18-3.el7                     
+DEBUG util.py:537:    perl-FCGI.x86_64 1:0.74-8.el7                                 perl-File-CheckTree.noarch 0:4.42-3.el7                        perl-File-Fetch.noarch 0:0.42-2.el7                           
+DEBUG util.py:537:    perl-IO-Compress.noarch 0:2.061-2.el7                         perl-IO-Zlib.noarch 1:1.10-299.el7_9                           perl-JSON-PP.noarch 0:2.27202-2.el7                           
+DEBUG util.py:537:    perl-Locale-Codes.noarch 0:3.26-2.el7                         perl-Locale-Maketext.noarch 0:1.23-3.el7                       perl-Locale-Maketext-Simple.noarch 1:0.21-299.el7_9           
+DEBUG util.py:537:    perl-Log-Message.noarch 1:0.08-3.el7                          perl-Log-Message-Simple.noarch 0:0.10-2.el7                    perl-Module-Build.noarch 2:0.40.05-2.el7                      
+DEBUG util.py:537:    perl-Module-CoreList.noarch 1:2.76.02-299.el7_9               perl-Module-Load.noarch 1:0.24-3.el7                           perl-Module-Load-Conditional.noarch 0:0.54-3.el7              
+DEBUG util.py:537:    perl-Module-Loaded.noarch 1:0.08-299.el7_9                    perl-Module-Metadata.noarch 0:1.000018-2.el7                   perl-Module-Pluggable.noarch 1:4.8-3.el7                      
+DEBUG util.py:537:    perl-Net-Daemon.noarch 0:0.48-5.el7                           perl-Object-Accessor.noarch 1:0.42-299.el7_9                   perl-Package-Constants.noarch 1:0.02-299.el7_9                
+DEBUG util.py:537:    perl-Params-Check.noarch 1:0.38-2.el7                         perl-Parse-CPAN-Meta.noarch 1:1.4404-5.el7                     perl-Perl-OSType.noarch 0:1.003-3.el7                         
+DEBUG util.py:537:    perl-PlRPC.noarch 0:0.2020-14.el7                             perl-Pod-Checker.noarch 0:1.60-2.el7                           perl-Pod-LaTeX.noarch 0:0.61-2.el7                            
+DEBUG util.py:537:    perl-Pod-Parser.noarch 0:1.61-2.el7                           perl-Sys-Syslog.x86_64 0:0.33-3.el7                            perl-Term-UI.noarch 0:0.36-2.el7                              
+DEBUG util.py:537:    perl-Test-Harness.noarch 0:3.28-3.el7                         perl-Test-Simple.noarch 0:0.98-243.el7                         perl-Text-Soundex.x86_64 0:3.04-4.el7                         
+DEBUG util.py:537:    perl-Text-Unidecode.noarch 0:0.04-20.el7                      perl-Version-Requirements.noarch 0:0.101022-244.el7            perl-autodie.noarch 0:2.16-2.el7                              
+DEBUG util.py:537:    perl-devel.x86_64 4:5.16.3-299.el7_9                          perl-local-lib.noarch 0:1.008010-4.el7                         perl-version.x86_64 3:0.99.07-6.el7                           
+DEBUG util.py:537:    pyparsing.noarch 0:1.5.6-9.el7                                python.x86_64 0:2.7.5-94.el7_9                                 systemtap-sdt-devel.x86_64 0:4.0-13.el7                       
+DEBUG util.py:537:    yajl.x86_64 0:2.0.4-4.el7                                    
 DEBUG util.py:537:  Complete!
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:200:  kill orphans in chroot /var/lib/mock/centos+epel-7-x86_64/root
@@ -1778,7 +1717,7 @@ DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'remount,priva
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'aba418e73751406798002293ea816415', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '64c53c2ed76c435cb78cdc5b527004e2', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  perl-CGI-3.63-4.el7.noarch
 DEBUG util.py:537:  gpg-pubkey-352c64e5-52ae6884
 DEBUG util.py:537:  keyutils-libs-devel-1.5.8-3.el7.x86_64
@@ -1793,7 +1732,7 @@ DEBUG util.py:537:  libverto-devel-0.2.5-4.el7.x86_64
 DEBUG util.py:537:  kernel-headers-3.10.0-1160.119.1.el7.x86_64
 DEBUG util.py:537:  openssl-devel-1.0.2k-26.el7_9.x86_64
 DEBUG util.py:537:  nss-softokn-freebl-3.90.0-6.el7_9.x86_64
-DEBUG util.py:537:  modsecurity-3.0.16-1.el7.x86_64
+DEBUG util.py:537:  modsecurity-3.0.17-1.el7.x86_64
 DEBUG util.py:537:  glibc-2.17-326.el7_9.3.x86_64
 DEBUG util.py:537:  libzstd-devel-1.5.5-1.el7.x86_64
 DEBUG util.py:537:  nss-util-3.90.0-1.el7_9.x86_64
@@ -2074,7 +2013,7 @@ DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'remount,priva
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '36d7b8a5d28c463182ee1d7a38b868f9', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '8b446e5079194b7a9c8012b8783c9cb6', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  perl-CGI-3.63-4.el7.noarch
 DEBUG util.py:537:  gpg-pubkey-352c64e5-52ae6884
 DEBUG util.py:537:  keyutils-libs-devel-1.5.8-3.el7.x86_64
@@ -2089,7 +2028,7 @@ DEBUG util.py:537:  libverto-devel-0.2.5-4.el7.x86_64
 DEBUG util.py:537:  kernel-headers-3.10.0-1160.119.1.el7.x86_64
 DEBUG util.py:537:  openssl-devel-1.0.2k-26.el7_9.x86_64
 DEBUG util.py:537:  nss-softokn-freebl-3.90.0-6.el7_9.x86_64
-DEBUG util.py:537:  modsecurity-3.0.16-1.el7.x86_64
+DEBUG util.py:537:  modsecurity-3.0.17-1.el7.x86_64
 DEBUG util.py:537:  glibc-2.17-326.el7_9.3.x86_64
 DEBUG util.py:537:  libzstd-devel-1.5.5-1.el7.x86_64
 DEBUG util.py:537:  nss-util-3.90.0-1.el7_9.x86_64
@@ -2389,7 +2328,7 @@ DEBUG util.py:717:  child environment: None
 DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/centos+epel-7-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
-DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.as01j8_v', '/var/lib/mock/centos+epel-7-x86_64/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.ecdrzbpq', '/var/lib/mock/centos+epel-7-x86_64/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:688:  Child return code was: 0
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64/root/sys/fs/selinux
 DEBUG util.py:717:  child environment: None
@@ -2407,19 +2346,19 @@ DEBUG util.py:717:  child environment: None
 DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:688:  Child return code was: 0
 DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/centos+epel-7-x86_64/root/installation-homedir
-DEBUG package_manager.py:296:  ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '--releasever', '7', '/var/lib/mock/centos+epel-7-x86_64/root//builddir/build/SRPMS/nginx-1.30.5-1.el7.redadmin.src.rpm']
+DEBUG package_manager.py:296:  ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '--releasever', '7', '/var/lib/mock/centos+epel-7-x86_64/root//builddir/build/SRPMS/nginx-1.30.6-1.el7.redadmin.src.rpm']
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'dbcc815a13d14264a69d7c5d29197a6b', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=LC_MESSAGES=C.UTF-8', '/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '--releasever', '7', '/var/lib/mock/centos+epel-7-x86_64/root//builddir/build/SRPMS/nginx-1.30.5-1.el7.redadmin.src.rpm', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a99e2c913e794ee3921931e38f403733', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=LC_MESSAGES=C.UTF-8', '/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/centos+epel-7-x86_64/root/', '--releasever', '7', '/var/lib/mock/centos+epel-7-x86_64/root//builddir/build/SRPMS/nginx-1.30.6-1.el7.redadmin.src.rpm', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/centos+epel-7-x86_64/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:535:  Failed to set locale, defaulting to C
-DEBUG util.py:537:  base                                                     | 3.6 kB     00:00     
-DEBUG util.py:537:  centos-sclo-rh                                           | 3.0 kB     00:00     
-DEBUG util.py:537:  centos-sclo-sclo                                         | 3.0 kB     00:00     
-DEBUG util.py:537:  epel                                                     | 4.3 kB     00:00     
-DEBUG util.py:537:  extras                                                   | 2.9 kB     00:00     
-DEBUG util.py:537:  mock-localrepo                                           | 3.0 kB     00:00     
-DEBUG util.py:537:  updates                                                  | 2.9 kB     00:00     
-DEBUG util.py:537:  Getting requirements for 1:nginx-1.30.5-1.el7.redadmin.src
+DEBUG util.py:537:  base                                                                                                                                                                  | 3.6 kB  00:00:00     
+DEBUG util.py:537:  centos-sclo-rh                                                                                                                                                        | 3.0 kB  00:00:00     
+DEBUG util.py:537:  centos-sclo-sclo                                                                                                                                                      | 3.0 kB  00:00:00     
+DEBUG util.py:537:  epel                                                                                                                                                                  | 4.3 kB  00:00:00     
+DEBUG util.py:537:  extras                                                                                                                                                                | 2.9 kB  00:00:00     
+DEBUG util.py:537:  mock-localrepo                                                                                                                                                        | 3.0 kB  00:00:00     
+DEBUG util.py:537:  updates                                                                                                                                                               | 2.9 kB  00:00:00     
+DEBUG util.py:537:  Getting requirements for 1:nginx-1.30.6-1.el7.redadmin.src
 DEBUG util.py:537:   --> Already installed : systemd-219-78.el7_9.9.x86_64
 DEBUG util.py:537:   --> Already installed : 1:openssl-devel-1.0.2k-26.el7_9.x86_64
 DEBUG util.py:537:   --> Already installed : zlib-devel-1.2.7-21.el7_9.x86_64
@@ -2430,7 +2369,7 @@ DEBUG util.py:537:   --> Already installed : 1:pkgconfig-0.27.1-4.el7.x86_64
 DEBUG util.py:537:   --> Already installed : perl-core-5.16.3-299.el7_9.x86_64
 DEBUG util.py:537:   --> Already installed : 1:perl-IPC-Cmd-0.80-4.el7.noarch
 DEBUG util.py:537:   --> Already installed : perl-Time-Piece-1.20.1-299.el7_9.x86_64
-DEBUG util.py:537:   --> Already installed : modsecurity-3.0.16-1.el7.x86_64
+DEBUG util.py:537:   --> Already installed : modsecurity-3.0.17-1.el7.x86_64
 DEBUG util.py:537:  No uninstalled build requires
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:200:  kill orphans in chroot /var/lib/mock/centos+epel-7-x86_64/root
@@ -2478,7 +2417,7 @@ DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'remount,priva
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'c43d6facee034fde9e39388ec7c69d01', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0d2986e3dba048a2a13652d1cd2ab9ad', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/rpm', '-qa', '--root', '/var/lib/mock/centos+epel-7-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  perl-CGI-3.63-4.el7.noarch
 DEBUG util.py:537:  gpg-pubkey-352c64e5-52ae6884
 DEBUG util.py:537:  keyutils-libs-devel-1.5.8-3.el7.x86_64
@@ -2493,7 +2432,7 @@ DEBUG util.py:537:  libverto-devel-0.2.5-4.el7.x86_64
 DEBUG util.py:537:  kernel-headers-3.10.0-1160.119.1.el7.x86_64
 DEBUG util.py:537:  openssl-devel-1.0.2k-26.el7_9.x86_64
 DEBUG util.py:537:  nss-softokn-freebl-3.90.0-6.el7_9.x86_64
-DEBUG util.py:537:  modsecurity-3.0.16-1.el7.x86_64
+DEBUG util.py:537:  modsecurity-3.0.17-1.el7.x86_64
 DEBUG util.py:537:  glibc-2.17-326.el7_9.3.x86_64
 DEBUG util.py:537:  libzstd-devel-1.5.5-1.el7.x86_64
 DEBUG util.py:537:  nss-util-3.90.0-1.el7_9.x86_64
@@ -2774,7 +2713,7 @@ DEBUG util.py:636:  Executing command: ['/bin/mount', '-n', '-o', 'remount,priva
 DEBUG util.py:688:  Child return code was: 0
 DEBUG util.py:717:  child environment: None
 DEBUG util.py:631:  Using nspawn with args ['--capability=cap_ipc_lock', '--resolv-conf=off']
-DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ca8577dcfe024c4a91b31034c31e2784', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/sh', '-c', "rpm -qa --root '/var/lib/mock/centos+epel-7-x86_64/root' --qf '%{nevra} %{buildtime} %{size} installed\\n'"] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:636:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '81de310f523044e7a8651e0f217a5c61', '-D', '/var/lib/mock/centos+epel-7-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--resolv-conf=off', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '/bin/sh', '-c', "rpm -qa --root '/var/lib/mock/centos+epel-7-x86_64/root' --qf '%{nevra} %{buildtime} %{size} installed\\n'"] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
 DEBUG util.py:537:  perl-CGI-3.63-4.el7.noarch 1402342280 716590 installed
 DEBUG util.py:537:  gpg-pubkey-352c64e5-52ae6884 1387161732 0 installed
 DEBUG util.py:537:  keyutils-libs-devel-1.5.8-3.el7.x86_64 1402366675 29186 installed
@@ -2789,7 +2728,7 @@ DEBUG util.py:537:  libverto-devel-0.2.5-4.el7.x86_64 1402386261 25871 installed
 DEBUG util.py:537:  kernel-headers-3.10.0-1160.119.1.el7.x86_64 1717513295 3948899 installed
 DEBUG util.py:537:  openssl-devel-1:1.0.2k-26.el7_9.x86_64 1679328899 3269309 installed
 DEBUG util.py:537:  nss-softokn-freebl-3.90.0-6.el7_9.x86_64 1697634121 732614 installed
-DEBUG util.py:537:  modsecurity-3.0.16-1.el7.x86_64 1783350343 4010333 installed
+DEBUG util.py:537:  modsecurity-3.0.17-1.el7.x86_64 1790835776 4043654 installed
 DEBUG util.py:537:  glibc-2.17-326.el7_9.3.x86_64 1717513546 14100922 installed
 DEBUG util.py:537:  libzstd-devel-1.5.5-1.el7.x86_64 1680698626 202801 installed
 DEBUG util.py:537:  nss-util-3.90.0-1.el7_9.x86_64 1697632868 203144 installed

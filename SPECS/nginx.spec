@@ -79,7 +79,7 @@ Requires(pre): shadow-utils
 
 # end of distribution specific definitions
 
-%define base_version 1.30.5
+%define base_version 1.30.6
 %define base_release 1%{?dist}
 
 %define bdir %{_builddir}/%{name}-%{base_version}
@@ -360,6 +360,16 @@ if [ $1 -ge 1 ]; then
 fi
 
 %changelog
+* Wed Oct 14 2026 Nginx Packaging <nginx-packaging@f5.com> - 1.30.6-1%{?dist}.ngx
+- Update to nginx 1.30.6
+- Fix buffer overflow vulnerabilities (CVE-2026-15176, CVE-2026-93479)
+- Fix HTTP/3 request body injection (CVE-2026-95101)
+- Fix TLS session forgery vulnerability (CVE-2026-97629)
+- Fix use-after-free vulnerability in SSI with AIO (CVE-2026-97205)
+- Fix segmentation faults and memory safety issues
+- Fix HTTP/2 flow control, caching, and HTTP/3 issues
+- Fix binary compatibility with third-party modules
+
 * Tue Apr 14 2026 Nginx Packaging <nginx-packaging@f5.com> - 1.30.0-1%{?dist}.ngx
 - 1.30.0-1
 
