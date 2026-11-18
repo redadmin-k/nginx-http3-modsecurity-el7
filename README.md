@@ -6,7 +6,7 @@ This build includes HTTP/3, OpenSSL 3.5.9, KTLS, zstd compression, and ModSecuri
 
 ## Features
 
-- Nginx 1.30.6
+- Nginx 1.30.7
 - OpenSSL 3.5.9
 - HTTP/3 / QUIC
 - KTLS

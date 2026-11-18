@@ -1,22 +1,22 @@
-2026-10-15 12:44:39,206 - Mock Version: 6.9
-2026-10-15 12:44:39,211 - Start(bootstrap): chroot init
-2026-10-15 12:44:39,223 - Start(bootstrap): cleaning package manager metadata
-2026-10-15 12:44:39,235 - Finish(bootstrap): cleaning package manager metadata
-2026-10-15 12:44:39,825 - Finish(bootstrap): chroot init
-2026-10-15 12:44:39,826 - Start: chroot init
-2026-10-15 12:44:39,830 - Start: unpacking root cache
-2026-10-15 12:44:44,051 - Finish: unpacking root cache
-2026-10-15 12:44:44,084 - Start: cleaning package manager metadata
-2026-10-15 12:44:44,864 - Finish: cleaning package manager metadata
-2026-10-15 12:44:47,964 - Start: yum update
-2026-10-15 12:44:53,990 - Finish: yum update
-2026-10-15 12:44:54,351 - Finish: chroot init
-2026-10-15 12:44:54,352 - Start: build phase for nginx-1.30.6-1.el8.src.rpm
-2026-10-15 12:44:54,352 - Start: build setup for nginx-1.30.6-1.el8.src.rpm
-2026-10-15 12:45:17,644 - Finish: build setup for nginx-1.30.6-1.el8.src.rpm
-2026-10-15 12:45:17,645 - Start: rpmbuild nginx-1.30.6-1.el8.src.rpm
-2026-10-15 12:45:17,647 - Start: Outputting list of installed packages
-2026-10-15 12:45:18,013 - Finish: Outputting list of installed packages
-2026-10-15 12:50:41,299 - Finish: rpmbuild nginx-1.30.6-1.el8.src.rpm
-2026-10-15 12:50:41,755 - Finish: build phase for nginx-1.30.6-1.el8.src.rpm
-2026-10-15 12:50:41,758 - Finish: run
+2026-11-19 01:58:48,547 - Mock Version: 6.9
+2026-11-19 01:58:48,551 - Start(bootstrap): chroot init
+2026-11-19 01:58:48,560 - Start(bootstrap): cleaning package manager metadata
+2026-11-19 01:58:48,572 - Finish(bootstrap): cleaning package manager metadata
+2026-11-19 01:58:49,253 - Finish(bootstrap): chroot init
+2026-11-19 01:58:49,254 - Start: chroot init
+2026-11-19 01:58:49,260 - Start: cleaning package manager metadata
+2026-11-19 01:58:49,333 - Finish: cleaning package manager metadata
+2026-11-19 01:58:50,661 - Start: installing minimal buildroot with yum
+2026-11-19 02:01:27,787 - Finish: installing minimal buildroot with yum
+2026-11-19 02:01:28,560 - Start: creating root cache
+2026-11-19 02:01:38,482 - Finish: creating root cache
+2026-11-19 02:01:38,751 - Finish: chroot init
+2026-11-19 02:01:39,191 - Start: build phase for nginx-1.30.7-1.el8.src.rpm
+2026-11-19 02:01:39,192 - Start: build setup for nginx-1.30.7-1.el8.src.rpm
+2026-11-19 02:02:45,031 - Finish: build setup for nginx-1.30.7-1.el8.src.rpm
+2026-11-19 02:02:45,032 - Start: rpmbuild nginx-1.30.7-1.el8.src.rpm
+2026-11-19 02:02:45,034 - Start: Outputting list of installed packages
+2026-11-19 02:02:45,407 - Finish: Outputting list of installed packages
+2026-11-19 02:11:34,799 - Finish: rpmbuild nginx-1.30.7-1.el8.src.rpm
+2026-11-19 02:11:35,149 - Finish: build phase for nginx-1.30.7-1.el8.src.rpm
+2026-11-19 02:11:35,151 - Finish: run

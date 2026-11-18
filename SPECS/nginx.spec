@@ -79,7 +79,7 @@ Requires(pre): shadow-utils
 
 # end of distribution specific definitions
 
-%define base_version 1.30.6
+%define base_version 1.30.7
 %define base_release 1%{?dist}
 
 %define bdir %{_builddir}/%{name}-%{base_version}
@@ -360,6 +360,18 @@ if [ $1 -ge 1 ]; then
 fi
 
 %changelog
+* Wed Nov 18 2026 Akiyoshi Kurita - 1.30.7-1
+- Update to nginx 1.30.7.
+- Fix buffer overflow with try_files and alias directives (CVE-2026-125283).
+- Fix HTTP/2 flow control window overflow (CVE-2026-123007).
+- Fix HTTP/2 use-after-free with insufficient worker_connections (CVE-2026-123633).
+- Fix HTTP/3 use-after-free with insufficient worker_connections (CVE-2026-121810).
+- Fix resolver use-after-free during concurrent subrequests (CVE-2026-123634).
+- Fix use-after-free in mail proxy server (CVE-2026-113425).
+- Fix incorrect SSL client certificate verification in stream module (CVE-2026-120967).
+- Fix SSL preread ClientHello parsing security bypass (CVE-2026-123640).
+- Fix infinite loop while reading SSL request body (CVE-2026-118899).
+
 * Wed Oct 14 2026 Nginx Packaging <nginx-packaging@f5.com> - 1.30.6-1%{?dist}.ngx
 - Update to nginx 1.30.6
 - Fix buffer overflow vulnerabilities (CVE-2026-15176, CVE-2026-93479)
