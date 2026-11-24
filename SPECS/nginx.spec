@@ -79,7 +79,7 @@ Requires(pre): shadow-utils
 
 # end of distribution specific definitions
 
-%define base_version 1.30.7
+%define base_version 1.30.8
 %define base_release 1%{?dist}
 
 %define bdir %{_builddir}/%{name}-%{base_version}
@@ -360,6 +360,11 @@ if [ $1 -ge 1 ]; then
 fi
 
 %changelog
+* Tue Nov 24 2026 Akiyoshi Kurita - 1.30.8-1
+- Update to nginx 1.30.8
+- Fix excessive CPU usage when using ssl_early_data (CVE-2026-132779)
+- Fix excessive CPU usage when using SSL connections to backends
+
 * Wed Nov 18 2026 Akiyoshi Kurita - 1.30.7-1
 - Update to nginx 1.30.7.
 - Fix buffer overflow with try_files and alias directives (CVE-2026-125283).
